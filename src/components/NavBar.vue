@@ -5,7 +5,7 @@
           :class="{'active-btn': isActivePage('/')}" 
           @click="navigateToIndex"
         >
-          Index
+          Landing
         </v-btn>
         <v-btn 
           :class="{'active-btn': isActivePage('/about')}" 
