@@ -405,29 +405,30 @@ html {
   color: #f7b400; /* You can adjust hover effect here */
 }
 
-
 /* Mobile Responsive Styles */
 @media (max-width: 600px) {
-  /* Adjust font sizes for mobile */
-  .portfolio-name {
-    font-size: clamp(30px, 10vw, 60px);
-    margin-left: 10px;
-    margin-bottom: -50px;
+  /* Ensure background image scales well on smaller screens */
+  .background-section {
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 20px 0;
   }
 
+  /* Adjust portfolio name size and margins for mobile */
+  .portfolio-name {
+    font-size: clamp(30px, 8vw, 60px);
+    margin-left: 10px;
+    margin-bottom: 0; /* Removed negative margin to avoid overlapping background */
+  }
+
+  /* Adjust subtitle size and positioning */
   .portfolio-name-subtitle {
     font-size: 1rem;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
-  /* Center content and adjust padding/margins for better mobile view */
-  .portfolio-card-blank {
-    text-align: center;
-    margin-left: 0;
-    padding: 10px;
-  }
-
-  /* Adjust tagline styles for mobile */
+  /* Adjust tagline styles */
   .tagline-top,
   .tagline-bottom {
     font-size: clamp(20px, 8vw, 40px);
@@ -438,11 +439,10 @@ html {
 
   .tagline-container {
     width: 90vw;
-    height: auto;
     margin: 0 auto;
   }
 
-  /* Adjust button size and placement */
+  /* Make the portfolio button more touch-friendly */
   .portfolio-btn {
     bottom: 5%;
     right: 10%;
@@ -452,7 +452,7 @@ html {
     margin: 0 auto;
   }
 
-  /* CTA text and icons adjustments for mobile */
+  /* Ensure CTA container and icons adjust for mobile */
   .cta-container {
     top: 20%;
     right: 5%;
@@ -481,14 +481,7 @@ html {
     font-size: 0.8rem;
   }
 
-  /* Adjust background sections to make sure images scale properly */
-  .background-section {
-    height: auto;
-    padding: 20px 0;
-    background-size: contain;
-  }
-
-  /* Make content containers full width on mobile */
+  /* Make sure content containers are responsive */
   .content-container,
   .content-container-2 {
     padding: 10px;
