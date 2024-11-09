@@ -404,4 +404,96 @@ html {
 .v-footer .v-btn:hover {
   color: #f7b400; /* You can adjust hover effect here */
 }
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+  /* Adjust font sizes for mobile */
+  .portfolio-name {
+    font-size: clamp(30px, 10vw, 60px);
+    margin-left: 10px;
+    margin-bottom: -50px;
+  }
+
+  .portfolio-name-subtitle {
+    font-size: 1rem;
+    margin-top: 50px;
+  }
+
+  /* Center content and adjust padding/margins for better mobile view */
+  .portfolio-card-blank {
+    text-align: center;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  /* Adjust tagline styles for mobile */
+  .tagline-top,
+  .tagline-bottom {
+    font-size: clamp(20px, 8vw, 40px);
+    position: static;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .tagline-container {
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Adjust button size and placement */
+  .portfolio-btn {
+    bottom: 5%;
+    right: 10%;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* CTA text and icons adjustments for mobile */
+  .cta-container {
+    top: 20%;
+    right: 5%;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .cta-text {
+    font-size: clamp(30px, 8vw, 50px);
+    margin-bottom: 10px;
+  }
+
+  .cta-icons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Footer button adjustments */
+  .v-footer {
+    text-align: center;
+  }
+
+  .v-footer .v-btn {
+    margin: 5px;
+    font-size: 0.8rem;
+  }
+
+  /* Adjust background sections to make sure images scale properly */
+  .background-section {
+    height: auto;
+    padding: 20px 0;
+    background-size: contain;
+  }
+
+  /* Make content containers full width on mobile */
+  .content-container,
+  .content-container-2 {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
 </style>
