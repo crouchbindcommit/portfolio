@@ -89,17 +89,17 @@ const timelineEvents = [
         description: "Worked as a fullstack software developer, contributed directly to refactoring SQL database and modernizing frontend by abandoning aspx pages and implementing javascript framework. Beyond development practices, learned power quality mitigation techniques and basic understandings of semiconductor, utility, and CNC machining industries.",
         image: "./me/epri.jpg"
     },
+      {
+        date: "Spring 2022 - Spring 2023",
+        title: "Vice President of University of Tennessee German Club",
+        description: "Led cultural and social events for the German Club, fostered community of language enthusiasts on and off campus. Encouraged collegiate participation in monthly community German meets.",
+        image: "./me/germ-vp.jpg"
+    },
     {
         date: "Spring 2023 - Fall 2024",
         title: "Recruitment Chair for the University of Tennessee Women’s Rugby Club",
         description: "Oversaw recruitment and organized events to expand and strengthen the team. Currently, the big sister to two littles on the UTWRFC squad, as well as being a little myself on the Knoxville Minx squad.",
         image: "./me/running.jpg"
-    },
-    {
-        date: "Spring 2022 - Spring 2023",
-        title: "Vice President of University of Tennessee German Club",
-        description: "Led cultural and social events for the German Club, fostered community of language enthusiasts on and off campus. Encouraged collegiate participation in monthly community German meets.",
-        image: "./me/germ-vp.jpg"
     },
     {
         date: "Summer 2023 - Fall 2024",
