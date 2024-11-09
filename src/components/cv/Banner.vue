@@ -31,7 +31,7 @@
 
 <script lang="ts" setup>
 const downloadResume = () => {
-    const resumeUrl = "@/assets/resume.pdf"; // Adjust the path to where your resume is stored
+    const resumeUrl = "/Resume.pdf"; // Adjust the path to where your resume is stored
     window.location.href = resumeUrl;
 };
 </script>
