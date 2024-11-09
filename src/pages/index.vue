@@ -407,7 +407,7 @@ html {
 
 /* Mobile Responsive Styles */
 @media (max-width: 600px) {
-  /* Ensure background image scales well on smaller screens */
+  /* Ensure background images scale properly on all sections */
   .background-section {
     background-size: cover;
     background-position: center;
@@ -419,7 +419,7 @@ html {
   .portfolio-name {
     font-size: clamp(30px, 8vw, 60px);
     margin-left: 10px;
-    margin-bottom: 0; /* Removed negative margin to avoid overlapping background */
+    margin-bottom: 0;
   }
 
   /* Adjust subtitle size and positioning */
@@ -469,6 +469,28 @@ html {
   .cta-icons {
     justify-content: center;
     gap: 15px;
+  }
+
+  /* Fix background images for scrolling sections */
+  .background-1 {
+    background-image: url('/background/yellow-screen.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure full height on mobile */
+  }
+
+  .background-2 {
+    background-image: url('/background/cliff.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure full height on mobile */
+  }
+
+  .background-3 {
+    background-image: url('/background/standup-paddleboard.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensure full height on mobile */
   }
 
   /* Footer button adjustments */
