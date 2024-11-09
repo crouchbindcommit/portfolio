@@ -147,7 +147,6 @@ const getCardStyles = (index: number) => {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Banner or Flag for the Timeline Section */
 .timeline-banner {
   width: 100%;
@@ -164,259 +163,71 @@ const getCardStyles = (index: number) => {
 }
 
 /* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   .timeline-banner {
     font-size: 1.5rem; /* Adjust font size for smaller screens */
     padding: 0.8rem 0; /* Reduce padding for smaller screens */
   }
-}
 
+  .timeline-container {
+    padding: 0 1rem; /* Add padding to the container to prevent text from touching the sides */
+  }
 
-/* Timeline Container */
-.timeline-container {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    perspective: 1000px;
-    /* Adding perspective to the container */
-    overflow: hidden;
-    /* Prevents overflow */
-}
-
-/* Trunk of the tree - Set to be behind everything else */
-.timeline-trunk {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background-color: #42b983;
-    transform: translateX(-50%);
-    z-index: -1;
-    /* Set to behind all other elements */
-}
-
-/* Timeline Item Styling */
-.timeline-item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3rem 0;
-    /* Increased vertical spacing between items */
+  .timeline-item {
+    margin: 1.5rem 0;
     width: 100%;
-    max-width: 100%;
-    /* Ensure items don't exceed container width */
+  }
+
+  .timeline-card {
+    width: 100%; /* Ensure cards take full width on smaller screens */
+    padding: 1.5rem; /* Reduced padding for smaller cards */
+    margin: 0 auto; /* Center the card */
+  }
+
+  .timeline-date {
+    font-size: 1rem; /* Adjust font size of dates for better mobile readability */
+  }
+
+  .timeline-content {
+    font-size: 1rem; /* Adjust content text for smaller screen */
+  }
+
+  /* Reduce margin for mobile view */
+  .timeline-item .timeline-content {
+    margin-top: 1rem;
+  }
 }
 
-/* Timeline Arrow for Branches */
-.timeline-arrow {
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.timeline-arrow.right .arrow-up {
-    transform: rotate(45deg);
-}
-
-.timeline-arrow.right .arrow-down {
-    transform: rotate(-45deg);
-}
-
-.timeline-arrow.left .arrow-up {
-    transform: rotate(-45deg);
-}
-
-.timeline-arrow.left .arrow-down {
-    transform: rotate(45deg);
-}
-
-.arrow-up,
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-}
-
-.arrow-up {
-    border-bottom: 10px solid #42b983;
-}
-
-.arrow-down {
-    border-top: 10px solid #42b983;
-}
-
-/* Timeline Cards (Event Branches) */
-.timeline-card {
-    width: 60%;
-    /* Cards will take up 60% of the container width on large screens */
-    max-width: 600px;
-    /* Max width to prevent cards from getting too wide */
-    padding: 2rem;
-    border: 2px solid #42b983;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 2;
-    /* Ensure it's above the trunk line */
-    transition: transform 0.3s ease;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-/* Right Branch Cards */
-.timeline-card.right {
-    transform: translateX(10%);
-    /* Slight right offset */
-}
-
-/* Left Branch Cards */
-.timeline-card.left {
-    transform: translateX(-10%);
-    /* Slight left offset */
-}
-
-.timeline-description h3 {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #333;
-}
-
-.timeline-description p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.timeline-date {
-    font-weight: bold;
-    color: #42b983;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-/* AOS Animation */
-[data-aos="fade-up"] {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-[data-aos="fade-up"].aos-animate {
-    opacity: 1;
-}
-
-/* Media Queries for Smaller Screens */
-
-/* Mobile devices */
-@media (max-width: 768px) {
-    .timeline-container {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .timeline-item {
-        margin: 2rem 0;
-        /* Reduced margin */
-    }
-
-    .timeline-arrow {
-        display: none;
-        /* Hide arrows on mobile */
-    }
-
-    .timeline-card {
-        width: 100%;
-        /* Cards take full width on mobile */
-        margin-left: 0;
-        margin-right: 0;
-        padding: 1.5rem;
-        transform: none;
-        /* Remove horizontal offset */
-        max-width: none;
-        /* Prevent any max-width for mobile */
-    }
-
-    .timeline-date {
-        font-size: 1.1rem;
-    }
-
-    .timeline-description h3 {
-        font-size: 1.2rem;
-    }
-
-    .timeline-description p {
-        font-size: 0.9rem;
-    }
-}
-
-/* Tablets */
-@media (max-width: 1024px) {
-    .timeline-container {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .timeline-item {
-        margin: 2.5rem 0;
-    }
-
-    .timeline-card {
-        padding: 1.5rem;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .timeline-card.right,
-    .timeline-card.left {
-        margin-top: 1rem;
-        transform: none;
-        /* Remove horizontal offset */
-    }
-}
-
-  @media (max-width: 768px) {
-    .timeline-card {
-        width: 100%; /* Ensure cards take full width on small screens */
-        margin-top: 1.5rem; /* Reduce space between items */
-        padding: 1.5rem; /* Reduced padding for smaller cards */
-    }
-
-    .timeline-item {
-        margin: 2rem 0;
-        /* Reduced vertical spacing */
-    }
-}
-
+/* Additional fixes for very small screens (less than 480px) */
 @media (max-width: 480px) {
-    .timeline-banner {
-        font-size: 1.25rem; /* Further reduce font size for mobile */
-        padding: 0.6rem 0; /* Further reduce padding */
-    }
+  .timeline-banner {
+    font-size: 1.25rem; /* Further reduce font size for small phones */
+    padding: 0.6rem 0; /* Further reduce padding */
+  }
 
-    .timeline-item {
-        margin: 1rem 0;
-        /* Even closer items on mobile */
-    }
+  .timeline-item {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+  }
 
-    .timeline-card {
-        padding: 1rem; /* Smaller padding for mobile cards */
-    }
+  .timeline-card {
+    padding: 1rem; /* Smaller padding for mobile cards */
+  }
 
-    .timeline-date {
-        font-size: 1rem; /* Reduce font size of dates */
-    }
+  .timeline-date {
+    font-size: 0.9rem; /* Further reduce font size of dates for tiny screens */
+  }
+
+  .timeline-content {
+    font-size: 0.9rem; /* Ensure content fits well */
+  }
 }
 
-  
+/* To ensure no horizontal scrolling */
+body {
+  overflow-x: hidden;
+  margin: 0; /* Reset margin for the body */
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and borders are accounted for */
+}
 </style>
