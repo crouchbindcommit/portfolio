@@ -51,6 +51,24 @@
               </v-col>
             </v-row>
           </li>
+
+           <li class="experience-item">
+            <v-row align="center" no-gutters>
+              <v-col cols="12">
+                <div class="position">
+                  <h3 class="position-title">Peer Learning Assistant (Tutor)</h3>
+                  <p class="company-name">Vol Study Center, University of Tennessee Knoxville, Knoxville TN</p>
+                  <p class="duration">November 2022 – Current</p>
+                </div>
+                <p class="responsibilities-title">Responsibilities:</p>
+                <div class="responsibilities">
+                  <span class="responsibility-chip">Assisted undergraduate students in STEM courses during 1-1 sessions</span>
+                  <span class="responsibility-chip">Led exam review lectures</span>
+                  <span class="responsibility-chip">Courses Offered: College Algebra(MATH119), All Calculus I variations (MATH125/MATH131/MATH132/MATH141), Calculus III (MATH241), Phyiscs for Engineers I and II (EF141/EF142/EF151/EF152), Computer Methods in Engineer Problem Solving (EF105), Circuits I (ECE201), Data Structures and Algorithms I (CS202)  </span>
+                </div>
+              </v-col>
+            </v-row>
+          </li>
         </ul>
       </v-card-text>
     </v-card>
