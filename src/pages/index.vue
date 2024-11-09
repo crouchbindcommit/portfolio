@@ -152,13 +152,13 @@ html {
 
 /* Subtle gradient overlays for Y-axis transition */
 .background-1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent), url('./background/yellow-screen.png');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent), url('/background/yellow-screen.png');
 }
 
 .background-2 {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent),
-    url('./background/cliff.png');
+    url('/background/cliff.png');
   background-color: #1a2b3c;
   /* Make sure the background color matches the theme */
   background-size: cover;
@@ -171,7 +171,7 @@ html {
 }
 
 .background-3 {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent), url('./background/standup-paddleboard.png');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent), url('/background/standup-paddleboard.png');
 }
 
 
