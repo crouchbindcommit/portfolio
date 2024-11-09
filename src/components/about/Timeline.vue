@@ -270,37 +270,63 @@ const getCardStyles = (index: number) => {
     transform-origin: top right;
 }
 
-/* Ensure cards are aligned properly on mobile and tablet */
-@media (max-width: 768px) {
-    .timeline-card {
-        width: 100%; /* Ensure cards take full width on small screens */
-        margin-top: 1.5rem; /* Reduce space between items */
-        padding: 1.5rem; /* Reduced padding for smaller cards */
-    }
+/* Responsive adjustments for smaller screens */
+@media (max-width: 720px) {
+  /* Timeline container should be column on mobile */
+  .timeline-container {
+    padding: 0 1rem; /* Add padding to the container */
+    flex-direction: column; /* Stack the items vertically */
+  }
 
-    .timeline-item {
-        margin: 2rem 0;
-        /* Reduced vertical spacing */
-    }
+  /* Ensure the cards are stacked vertically on small screens */
+  .timeline-item {
+    width: 100%; /* Cards take full width on mobile */
+    padding: 1rem; /* Adjust padding for mobile */
+  }
+
+  /* Adjust font sizes for better mobile view */
+  .timeline-date {
+    font-size: 1rem; /* Slightly smaller date for mobile */
+  }
+
+  .timeline-content {
+    font-size: 1rem; /* Adjust content font size for smaller screens */
+  }
+
+  .timeline-banner {
+    font-size: 1.5rem; /* Smaller font size for the banner */
+    padding: 1rem 0; /* Adjust padding */
+  }
 }
 
-@media (max-width: 480px) {
-    .timeline-banner {
-        font-size: 1.25rem; /* Further reduce font size for mobile */
-        padding: 0.6rem 0; /* Further reduce padding */
-    }
+/* No changes for large screens above 720px */
+@media (min-width: 721px) {
+  .timeline-container {
+    display: flex;
+    flex-direction: row; /* Keeps timeline items in row */
+    flex-wrap: wrap; /* Allows wrapping of items to the next line if needed */
+    gap: 1.5rem;
+  }
 
-    .timeline-item {
-        margin: 1rem 0;
-        /* Even closer items on mobile */
-    }
+  /* Maintain default card styling for larger screens */
+  .timeline-item {
+    width: 45%; /* Cards will take 45% of the width, making them side by side */
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-    .timeline-card {
-        padding: 1rem; /* Smaller padding for mobile cards */
-    }
+  .timeline-banner {
+    font-size: 2rem; /* Larger banner font for large screens */
+  }
 
-    .timeline-date {
-        font-size: 1rem; /* Reduce font size of dates */
-    }
+  .timeline-date {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content {
+    font-size: 1.1rem;
+  }
 }
+
+</style>
 </style>
