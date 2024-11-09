@@ -64,7 +64,10 @@
                 <div class="responsibilities">
                   <span class="responsibility-chip">Assisted undergraduate students in STEM courses during 1-1 sessions</span>
                   <span class="responsibility-chip">Led exam review lectures</span>
-                  <span class="responsibility-chip">Courses Offered: College Algebra(MATH119), All Calculus I variations (MATH125/MATH131/MATH132/MATH141), Calculus III (MATH241), Phyiscs for Engineers I and II (EF141/EF142/EF151/EF152), Computer Methods in Engineer Problem Solving (EF105), Circuits I (ECE201), Data Structures and Algorithms I (CS202)  </span>
+                  <span class="responsibility-chip">Math Offered: College Algebra(MATH119), All Calculus I variations (MATH125/MATH131/MATH132/MATH141), Calculus III (MATH241) </span>
+                  <span class="responsibility-chip">Engineering Offered: Phyiscs for Engineers I and II (EF141/EF142/EF151/EF152), Computer Methods in Engineer Problem Solving (EF105) </span>
+                  <span class="responsibility-chip">EECS Offered: Circuits I (ECE201), Data Structures and Algorithms I (CS202) </span>
+                   <span class="responsibility-chip">I also offer every German Language course at UTK! </span>
                 </div>
               </v-col>
             </v-row>
