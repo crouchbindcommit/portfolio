@@ -34,6 +34,7 @@
     </div>
 </template>
 
+
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import AOS from 'aos';
@@ -44,36 +45,38 @@ const timelineEvents = [
       date: "Fall 2008",
       title: "First year of Tradition: Engineering Halloween",
       description: "Introduced to very rudimentary concepts of engineering in a playful manner by building lifesize halloween yard decorations out of 8020 alumnum and clothing from consignment stores."  ,
-      image: "./me/stuffy.jpg",
+      image: "/me/stuffy.jpg",
     },
     {
         date: "Fall 2020",
         title: "Started at UTK as a German Major",
         description: "Began academic journey at the University of Tennessee Knoxville as a German Language major.",
-        image: "./me/germ-major.png"
+        image: "/me/germ-major.png"
     },
     {
         date: "Spring 2021",
         title: "Declared Computer Engineering",
         description: "Declared Computer Engineering as second major, taking a giant leap of faith towards a frighting challenge. First time daring to pursue the passion to develop and design.",
-        image: "./me/solder.jpg"
+        image: "/me/solder.jpg"
     },
     {
         date: "Fall 2021 - September 2023",
         title: "Lunabotics Electrical Design Lead",
         description: "Led the Electrical Design team for UTK's Lunabotics team during maiden years, working on hardware design for a lunar rover.",
-        image: "./me/tn-electrical-lead.jpg",
+        image: "/me/tn-electrical-lead.jpg",
+
     },
     {
         date: "Fall 2022 - Current",
         title: "Peer Learning Assistant (Tutor) at the Vol Study Center",
         description: "Tutoring undergraduate students in computer engineering and German language courses, developing passion for helping others succeed academically.",
+
     },
     {
         date: "Spring 2022",
         title: "Earned the Deutsches Sprachdiplom der Kultusministerkonferenz II",
         description: "Achieved the German Language Diploma (DSD II), validating my proficiency in the language.",
-        image: "./me/dsd.png"
+        image: "/me/dsd.png"
     },
     {
         date: "Fall 2023 - Spring 2024",
@@ -84,19 +87,19 @@ const timelineEvents = [
         date: "Summer 2023 - Fall 2024",
         title: "Student Software Developer/Integrator at the Electric Power Research Institute",
         description: "Worked as a fullstack software developer, contributed directly to refactoring SQL database and modernizing frontend by abandoning aspx pages and implementing javascript framework. Beyond development practices, learned power quality mitigation techniques and basic understandings of semiconductor, utility, and CNC machining industries.",
-        image: "./me/epri.jpg"
-    },
-    {
-        date: "Spring 2022 - Spring 2023",
-        title: "Vice President of University of Tennessee German Club",
-        description: "Led cultural and social events for the German Club, fostered community of language enthusiasts on and off campus. Encouraged collegiate participation in monthly community German meets.",
-        image: "./me/germ-vp.jpg"
+        image: "/me/epri.jpg"
     },
     {
         date: "Spring 2023 - Fall 2024",
         title: "Recruitment Chair for the University of Tennessee Women’s Rugby Club",
         description: "Oversaw recruitment and organized events to expand and strengthen the team. Currently, the big sister to two littles on the UTWRFC squad, as well as being a little myself on the Knoxville Minx squad.",
-        image: "./me/running.jpg"
+        image: "/me/running.jpg"
+    },
+    {
+        date: "Spring 2022 - Spring 2023",
+        title: "Vice President of University of Tennessee German Club",
+        description: "Led cultural and social events for the German Club, fostered community of language enthusiasts on and off campus. Encouraged collegiate participation in monthly community German meets.",
+        image: "/me/germ-vp.jpg"
     },
     {
         date: "Summer 2023 - Fall 2024",
@@ -107,11 +110,11 @@ const timelineEvents = [
         date: "Fall 2024",
         title: "Invited to Deutsche Bank's First Early Career Hackathon in Cary, North Carolina",
         description: "Selected to participate in Deutsche Bank's inaugural hackathon, focusing on innovation in finance.",
-        image: "./me/db.png"
+        image: "/me/db.jpg"
     },
     {
         date: "Spring 2025",
-        title: "Graduation!", 
+        title: "Graduaton!", 
         description: "Graduating in May 2025 with a BS in Computer Engineering and a BA in German Language and Literature."
     }
 ];
@@ -217,116 +220,168 @@ const getCardStyles = (index: number) => {
     top: 0;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
     z-index: 1;
+    display: flex;
+    justify-content: center;
 }
 
-.timeline-arrow .arrow-up {
+.timeline-arrow.right .arrow-up {
+    transform: rotate(45deg);
+}
+
+.timeline-arrow.right .arrow-down {
+    transform: rotate(-45deg);
+}
+
+.timeline-arrow.left .arrow-up {
+    transform: rotate(-45deg);
+}
+
+.timeline-arrow.left .arrow-down {
+    transform: rotate(45deg);
+}
+
+.arrow-up,
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.arrow-up {
     border-bottom: 10px solid #42b983;
-    margin-left: -10px;
-    /* Centering the arrow */
 }
 
-.timeline-arrow .arrow-down {
+.arrow-down {
     border-top: 10px solid #42b983;
-    margin-left: -10px;
-    /* Centering the arrow */
 }
 
-/* Timeline Card */
+/* Timeline Cards (Event Branches) */
 .timeline-card {
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 2rem;
-    width: 80%; /* Default card width */
+    width: 60%;
+    /* Cards will take up 60% of the container width on large screens */
     max-width: 600px;
+    /* Max width to prevent cards from getting too wide */
+    padding: 2rem;
+    border: 2px solid #42b983;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 2;
-    margin-top: 3rem;
-    /* Allow some space between the card and the arrow */
+    /* Ensure it's above the trunk line */
+    transition: transform 0.3s ease;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Right Branch Cards */
+.timeline-card.right {
+    transform: translateX(10%);
+    /* Slight right offset */
+}
+
+/* Left Branch Cards */
+.timeline-card.left {
+    transform: translateX(-10%);
+    /* Slight left offset */
+}
+
+.timeline-description h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.timeline-description p {
+    font-size: 1rem;
+    color: #555;
 }
 
 .timeline-date {
     font-weight: bold;
     color: #42b983;
-    font-size: 1.25rem;
-}
-
-.timeline-description {
-    margin-top: 1rem;
-    font-size: 1.125rem;
-    color: #555;
-}
-
-.timeline-card.left {
-    align-self: flex-start;
-    transform-origin: top left;
-}
-
-.timeline-card.right {
-    align-self: flex-end;
-    transform-origin: top right;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 720px) {
-  /* Timeline container should be column on mobile */
-  .timeline-container {
-    padding: 0 1rem; /* Add padding to the container */
-    flex-direction: column; /* Stack the items vertically */
-  }
-
-  /* Ensure the cards are stacked vertically on small screens */
-  .timeline-item {
-    width: 100%; /* Cards take full width on mobile */
-    padding: 1rem; /* Adjust padding for mobile */
-  }
-
-  /* Adjust font sizes for better mobile view */
-  .timeline-date {
-    font-size: 1rem; /* Slightly smaller date for mobile */
-  }
-
-  .timeline-content {
-    font-size: 1rem; /* Adjust content font size for smaller screens */
-  }
-
-  .timeline-banner {
-    font-size: 1.5rem; /* Smaller font size for the banner */
-    padding: 1rem 0; /* Adjust padding */
-  }
-}
-
-/* No changes for large screens above 720px */
-@media (min-width: 721px) {
-  .timeline-container {
-    display: flex;
-    flex-direction: row; /* Keeps timeline items in row */
-    flex-wrap: wrap; /* Allows wrapping of items to the next line if needed */
-    gap: 1.5rem;
-  }
-
-  /* Maintain default card styling for larger screens */
-  .timeline-item {
-    width: 45%; /* Cards will take 45% of the width, making them side by side */
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .timeline-banner {
-    font-size: 2rem; /* Larger banner font for large screens */
-  }
-
-  .timeline-date {
     font-size: 1.2rem;
-  }
-
-  .timeline-content {
-    font-size: 1.1rem;
-  }
+    margin-bottom: 0.5rem;
 }
 
-</style>
+/* AOS Animation */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+}
+
+/* Media Queries for Smaller Screens */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .timeline-container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .timeline-item {
+        margin: 2rem 0;
+        /* Reduced margin */
+    }
+
+    .timeline-arrow {
+        display: none;
+        /* Hide arrows on mobile */
+    }
+
+    .timeline-card {
+        width: 100%;
+        /* Cards take full width on mobile */
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1.5rem;
+        transform: none;
+        /* Remove horizontal offset */
+        max-width: none;
+        /* Prevent any max-width for mobile */
+    }
+
+    .timeline-date {
+        font-size: 1.1rem;
+    }
+
+    .timeline-description h3 {
+        font-size: 1.2rem;
+    }
+
+    .timeline-description p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .timeline-container {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .timeline-item {
+        margin: 2.5rem 0;
+    }
+
+    .timeline-card {
+        padding: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .timeline-card.right,
+    .timeline-card.left {
+        margin-top: 1rem;
+        transform: none;
+        /* Remove horizontal offset */
+    }
+}
 </style>
