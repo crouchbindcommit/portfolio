@@ -16,7 +16,7 @@
                   <span class="course-chip">Embedded Systems (ECE455)</span>
                   <span class="course-chip">Machine Learning (CS325)</span>
                   <span class="course-chip">Cybersecurity (CS366)</span>
-                  <span class="course-chip">Digital Logic Design (ECE315)</span>
+                  <span class="course-chip">Digital Logic Design (ECE356)</span>
                 </div>
               </v-col>
             </v-row>
