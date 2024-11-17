@@ -6,7 +6,7 @@
         <!-- Content for Section 1 -->
         <v-card class="portfolio-card-blank" elevation="0">
           <div class="portfolio-name-wrapper">
-            <v-card-title class="portfolio-name">Mak</v-card-title>
+            <v-card-title class="portfolio-name">Makayla</v-card-title>
             <v-card-title class="portfolio-name">Mckinney.</v-card-title>
           </div>
           <v-card-text class="portfolio-name-subtitle"> Fullstack Developer. <u> Computer Engineer.</u> Dreamer. Doer.
