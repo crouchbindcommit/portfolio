@@ -6,7 +6,7 @@
                 <!-- Card for the text section with padding and background -->
                 <v-card class="text-card">
                     <v-card-title>
-                        <span class="typing-effect" style="color: blue;">Hi, I'm Mak.</span>
+                        <span class="typing-effect" style="color: blue;">Hi, I'm Makayla.</span>
                     </v-card-title>
 
                     <!-- Button for more text -->
