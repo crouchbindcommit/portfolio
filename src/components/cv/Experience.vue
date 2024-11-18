@@ -48,6 +48,30 @@
             </v-col>
           </v-row>
         </li>
+        
+        
+        <li class="experience-item">
+          <v-row align="center" no-gutters>
+            <v-col cols="12">
+              <div class="position">
+                <h3 class="position-title">
+                  Peer Learning Assistant (Tutor)
+                  <v-btn elevation="0" icon class="detail-btn" @click="tutorDialog = true">
+                    <v-icon>mdi-information-outline</v-icon>
+                  </v-btn>
+                </h3>
+                <p class="company-name">Student Success Center, University of Tennessee -- Knoxville, Knoxville, TN</p>
+                <p class="duration">November 2022 – Current</p>
+              </div>
+              <p class="responsibilities-title">Responsibilities:</p>
+              <div class="responsibilities">
+                <span class="responsibility-chip">Maintained positive environment for struggling students</span>
+                <span class="responsibility-chip">Host 1-1 study sessions for STEM and German Language</span>
+                <span class="responsibility-chip">Host Review lectures for STEM and German Language</span>
+              </div>
+            </v-col>
+          </v-row>
+        </li>
       </ul>
     </v-card-text>
 
@@ -92,6 +116,47 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
+
+    <v-dialog v-model="tutorDialog" max-width="600px">
+      <v-card>
+        <v-card-title> Peer Learning Assistant (Tutor) Details</v-card-title>
+        <v-card-text>
+           I offer 30 minute 1-on-1 tutoring and 2 hour exam review lectures through the <a href="https://studentsuccess.utk.edu/academicsuccess/vol-study-sessions-learning-consultation/" target="__blank"> Vol Study Center at the Academic Success Center at the University of Tennessee Knoxville</a>.
+        </v-card-text>
+      
+        <v-card-text> 
+          I offer: 
+          <br>
+          <b>Engineering courses</b>
+          <ul> 
+          <li>Computer Methods in Engineering Problem Solving | EF105 </li>
+          <li>Introduction to Physics and Modeling for Engineers I | EF141 </li>
+          <li>Introduction to Physics and Modeling for Engineers II | EF142 </li>
+          <li>Physics for Engineers I | EF151 </li>
+          <li>Physics for Engineers II | EF152 </li>
+          <li>Data Structures | CS202 </li>
+          <li>Circuits I | ECE201 </li>
+        </ul>
+        <br>
+        <b>      Math courses</b>
+        <ul>
+          <li>College Algebra | MATH119 </li>
+          <li>Basic Calculus | MATH125 </li>
+          <li>Calculus 1A Infused with Precalculus | MATH131 </li>
+          <li>Calculus 1B Infused with Precalculus | MATH132 </li>
+          <li>Calculus I | MATH141 </li>
+          <li>Calculus III | MATH241 </li>
+        </ul>
+        <br>
+        As well as <a href="https://catalog.utk.edu/content.php?filter%5B27%5D=GERM&filter%5B29%5D=&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=51&expand=&navoid=10658&search_database=Filter#acalog_template_course_filter" target="__blank"> all German courses at the University of Tennessee</a> and Introduction to Statistics | STAT201.
+      
+      </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" @click="tutorDialog = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </v-card>
 </template>
 
@@ -100,7 +165,7 @@ import { ref } from 'vue';
 
 const epriDialog = ref(false);
 const keyerDialog = ref(false);
-
+const tutorDialog = ref(false)
 </script>
 
   
