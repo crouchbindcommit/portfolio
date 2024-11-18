@@ -318,70 +318,62 @@ const getCardStyles = (index: number) => {
 
 /* Media Queries for Smaller Screens */
 
-/* Mobile devices */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-    .timeline-container {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
+  .timeline-banner {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    padding: 0.8rem 0; /* Reduce padding for smaller screens */
+  }
 
-    .timeline-item {
-        margin: 2rem 0;
-        /* Reduced margin */
-    }
+  .timeline-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%; /* Ensure container takes full width */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
 
-    .timeline-arrow {
-        display: none;
-        /* Hide arrows on mobile */
-    }
+  .timeline-item {
+    margin: 2rem 0; /* Reduced margin */
+    width: 100%; /* Ensure items take full width */
+    max-width: 100%;
+    padding: 0 10px; /* Add horizontal padding to prevent clipping */
+  }
 
-    .timeline-card {
-        width: 100%;
-        /* Cards take full width on mobile */
-        margin-left: 0;
-        margin-right: 0;
-        padding: 1.5rem;
-        transform: none;
-        /* Remove horizontal offset */
-        max-width: none;
-        /* Prevent any max-width for mobile */
-    }
+  .timeline-arrow {
+    display: none; /* Hide arrows on mobile */
+  }
 
-    .timeline-date {
-        font-size: 1.1rem;
-    }
+  .timeline-card {
+    width: 100%; /* Cards take full width on mobile */
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1.5rem;
+    transform: none; /* Remove horizontal offset */
+    max-width: none; /* Prevent any max-width for mobile */
+  }
 
-    .timeline-description h3 {
-        font-size: 1.2rem;
-    }
+  .timeline-date {
+    font-size: 1.1rem; /* Adjust font size for mobile */
+  }
 
-    .timeline-description p {
-        font-size: 0.9rem;
-    }
+  .timeline-description h3 {
+    font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  .timeline-description p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
 }
 
 /* Tablets */
 @media (max-width: 1024px) {
-    .timeline-container {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
+  .timeline-item {
+    width: 90%; /* Reduce the width on tablets for better spacing */
+  }
 
-    .timeline-item {
-        margin: 2.5rem 0;
-    }
-
-    .timeline-card {
-        padding: 1.5rem;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .timeline-card.right,
-    .timeline-card.left {
-        margin-top: 1rem;
-        transform: none;
-        /* Remove horizontal offset */
-    }
+  .timeline-card {
+    width: 90%; /* Ensure cards fit better on tablets */
+  }
 }
+
 </style>
