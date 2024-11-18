@@ -138,7 +138,7 @@
 
   .extracurricular-list li {
     font-size: 1em;
-    color: #333;
+    color: #d5cece;
     margin-bottom: 5px;
   }
   </style>
