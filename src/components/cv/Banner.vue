@@ -4,7 +4,7 @@
             <!-- Left section with your name -->
             <v-col cols="auto">
                 <div class="banner-text">
-                    <h1>Mak's Portfolio</h1>
+                    <h1>Makayla's Portfolio</h1>
                     <p class="tagline">Computer Engineer | Fullstack Developer | Security Enthusiast</p>
                 </div>
             </v-col>
