@@ -114,7 +114,7 @@ const timelineEvents = [
     },
     {
         date: "Spring 2025",
-        title: "Graduaton!", 
+        title: "Graduation!", 
         description: "Graduating in May 2025 with a BS in Computer Engineering and a BA in German Language and Literature."
     }
 ];
