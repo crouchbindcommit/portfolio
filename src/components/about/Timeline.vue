@@ -23,7 +23,7 @@
                 </div>
                 
                 <!-- Optional Image Section -->
-                <img v-if="event.image" :src="event.image" :alt="`Image for ${event.title}`" class="timeline-image" />
+                <img loading="lazy" v-if="event.image" :src="event.image" :alt="`Image for ${event.title}`" class="timeline-image" />
 
                 <div class="timeline-description">
                     <h3>{{ event.title }}</h3>
