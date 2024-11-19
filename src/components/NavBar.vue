@@ -5,7 +5,7 @@
           :class="{'active-btn': isActivePage('/')}" 
           @click="navigateToIndex"
         >
-          Landing
+          Index
         </v-btn>
         <v-btn 
           :class="{'active-btn': isActivePage('/about')}" 
@@ -38,14 +38,14 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue';
+import { ref, computed } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 const router = useRouter();
 const route = useRoute();
 
 // Check if the current route is the index page
-const isIndexPage = computed(() => route.name === '/'); // Ensure this matches the actual name of your index route
+const isIndexPage = computed(() => route.name === 'Home'); // Ensure this matches the actual name of your index route
 
 const navigateToIndex = () => navigateTo('/');
 
