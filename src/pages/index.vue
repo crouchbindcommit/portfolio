@@ -1,5 +1,5 @@
 <template>
-
+<meta name="google-site-verification" content="HJPgj4SbAgGZpQCM1WbCIySUMiAhQ2GjRBZlLrbBOUg" />
   <v-container class="scroll-container" fluid>
     <div class="background-section background-1">
       <v-container class="content-container" data-aos="fade-up">
