@@ -1,25 +1,27 @@
 <template>
-<meta name="google-site-verification" content="HJPgj4SbAgGZpQCM1WbCIySUMiAhQ2GjRBZlLrbBOUg" />
+<link rel="preload" href="/background/yellow-screen.png" as="image">
+<link rel="preload" href="/background/cliff.png" as="image">
+<link rel="preload" href="/background/standup-paddleboard.png" as="image">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
+  
   <v-container class="scroll-container" fluid>
-    <div class="background-section background-1">
+    <!-- Section 1 -->
+    <div class="background-section background-1" style="background-image: url('/background/yellow-screen.png');">
       <v-container class="content-container" data-aos="fade-up">
-        <!-- Content for Section 1 -->
         <v-card class="portfolio-card-blank" elevation="0">
           <div class="portfolio-name-wrapper">
             <v-card-title class="portfolio-name">Makayla</v-card-title>
             <v-card-title class="portfolio-name">Mckinney.</v-card-title>
           </div>
-          <v-card-text class="portfolio-name-subtitle"> Fullstack Developer. <u> Computer Engineer.</u> Dreamer. Doer.
-          </v-card-text>
+          <v-card-text class="portfolio-name-subtitle">Fullstack Developer. <u>Computer Engineer.</u> Dreamer. Doer.</v-card-text>
           <v-btn color="#1b1a17" @click="navigateToAbout" class="navigate-btn">About Me</v-btn>
-
         </v-card>
       </v-container>
     </div>
 
-    <div class="background-section background-2">
+    <!-- Section 2 -->
+    <div class="background-section background-2" style="background-image: url('/background/cliff.png');">
       <v-container class="content-container-2" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
-        <!-- Content for Section 2 -->
         <v-card class="portfolio-card-cliff" elevation="0">
           <v-card-text>
             <div class="tagline-container">
@@ -29,22 +31,16 @@
           </v-card-text>
         </v-card>
       </v-container>
-      <v-btn class="portfolio-btn" color="#581845" elevation="6" @click="navigateToPortfolio" data-aos="fade-up"
-        data-aos-duration="1000" data-aos-offset="100">
+      <v-btn class="portfolio-btn" color="#581845" elevation="6" @click="navigateToPortfolio" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
         View Portfolio
       </v-btn>
-
     </div>
 
-
-    <!-- Section 3: "Let's Build the Future, Together" and MDI icons -->
-    <div class="background-section background-3">
+    <!-- Section 3 -->
+    <div class="background-section background-3" style="background-image: url('/background/standup-paddleboard.png');">
       <v-container class="content-container">
-        <!-- Text and Icons Section -->
         <div class="cta-container" data-aos="fade-up">
-          <div class="cta-text">
-            Let's Build the Future, <br> Together
-          </div>
+          <div class="cta-text">Let's Build the Future, <br> Together</div>
           <div class="cta-icons">
             <v-btn icon href="https://www.linkedin.com/in/makayla-mckinney-b45129208/">
               <v-icon>mdi-linkedin</v-icon>
@@ -76,41 +72,32 @@
 </template>
 
 <script lang="ts" setup>
-import { useRouter  } from 'vue-router';
+import { useRouter } from 'vue-router';
 import { onMounted } from 'vue';
 import AOS from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 
 const router = useRouter();
 
 //navigation
-const navigateToAbout = () => {
-  router.push('/about'); // Navigate to the About Me page
-}
-
-const navigateToResume = () => {
-  router.push('/CV'); // Navigate to the About Me page
-}
-
-const navigateToPortfolio = () => {
-  router.push('/portfolio'); // Navigate to the portfolio page
-}
-
-const navigateToContact = () => {
-  router.push('/contact')
-}
+const navigateToAbout = () => { router.push('/about'); }
+const navigateToResume = () => { router.push('/CV'); }
+const navigateToPortfolio = () => { router.push('/portfolio'); }
+const navigateToContact = () => { router.push('/contact'); }
 
 onMounted(() => {
   AOS.init({
-    duration: 1000,  // Animation duration
-    easing: 'ease-in-out',  // Easing function
-    once: true,  // Trigger animation only once
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 200,  // Delay animations
   });
 });
-
 </script>
 
+
 <style scoped>
+
 body,
 html {
   margin: 0;
@@ -405,30 +392,29 @@ html {
   color: #f7b400; /* You can adjust hover effect here */
 }
 
+
 /* Mobile Responsive Styles */
 @media (max-width: 600px) {
-  /* Ensure background images scale properly on all sections */
-  .background-section {
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    padding: 20px 0;
-  }
-
-  /* Adjust portfolio name size and margins for mobile */
+  /* Adjust font sizes for mobile */
   .portfolio-name {
-    font-size: clamp(30px, 8vw, 60px);
+    font-size: clamp(30px, 10vw, 60px);
     margin-left: 10px;
-    margin-bottom: 0;
+    margin-bottom: -50px;
   }
 
-  /* Adjust subtitle size and positioning */
   .portfolio-name-subtitle {
     font-size: 1rem;
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
-  /* Adjust tagline styles */
+  /* Center content and adjust padding/margins for better mobile view */
+  .portfolio-card-blank {
+    text-align: center;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  /* Adjust tagline styles for mobile */
   .tagline-top,
   .tagline-bottom {
     font-size: clamp(20px, 8vw, 40px);
@@ -439,10 +425,11 @@ html {
 
   .tagline-container {
     width: 90vw;
+    height: auto;
     margin: 0 auto;
   }
 
-  /* Make the portfolio button more touch-friendly */
+  /* Adjust button size and placement */
   .portfolio-btn {
     bottom: 5%;
     right: 10%;
@@ -452,7 +439,7 @@ html {
     margin: 0 auto;
   }
 
-  /* Ensure CTA container and icons adjust for mobile */
+  /* CTA text and icons adjustments for mobile */
   .cta-container {
     top: 20%;
     right: 5%;
@@ -471,28 +458,6 @@ html {
     gap: 15px;
   }
 
-  /* Fix background images for scrolling sections */
-  .background-1 {
-    background-image: url('/background/yellow-screen.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Ensure full height on mobile */
-  }
-
-  .background-2 {
-    background-image: url('/background/cliff.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Ensure full height on mobile */
-  }
-
-  .background-3 {
-    background-image: url('/background/standup-paddleboard.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Ensure full height on mobile */
-  }
-
   /* Footer button adjustments */
   .v-footer {
     text-align: center;
@@ -503,7 +468,14 @@ html {
     font-size: 0.8rem;
   }
 
-  /* Make sure content containers are responsive */
+  /* Adjust background sections to make sure images scale properly */
+  .background-section {
+    height: auto;
+    padding: 20px 0;
+    background-size: contain;
+  }
+
+  /* Make content containers full width on mobile */
   .content-container,
   .content-container-2 {
     padding: 10px;
