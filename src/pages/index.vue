@@ -14,6 +14,19 @@
           <v-btn color="#1b1a17" @click="navigateToAbout" class="navigate-btn">About Me</v-btn>
         </v-card>
       </v-container>
+
+      <v-footer app>
+    <v-container class="pa-0" fluid>
+      <v-row class="fill-height" align="center" justify="center">
+        <v-col class="d-flex justify-center" cols="auto">
+          <v-btn @click="navigateToAbout">About</v-btn>
+          <v-btn @click="navigateToPortfolio">Portfolio</v-btn>
+          <v-btn @click="navigateToResume">CV</v-btn>
+          <v-btn @click="navigateToContact">Contact</v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-footer>
     </div>
 
     <!-- Section 2 -->
