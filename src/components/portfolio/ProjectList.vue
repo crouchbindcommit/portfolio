@@ -65,6 +65,9 @@ import So36 from "@/components/portfolio/projects/SO36.vue";
 import Rugby from "@/components/portfolio/projects/RaRaRugby.vue";
 import Email from "@/components/portfolio/projects/Email.vue";
 import CreditCheck from "@/components/portfolio/projects/CreditCheck.vue";
+import Hydroponics from "@/components/portfolio/projects/Hydroponics.vue";
+
+
 import ComingSoon from "@/components/portfolio/projects/ComingSoon.vue";
 
 
@@ -80,6 +83,7 @@ const searchQuery = ref("");
 const projects = ref([
   { component: Foodify, title: "", tags: [], description: "Foodify project details..." },
   { component: Phishing, title: "", tags: [], description: "Phishing project details..." },
+  { component: Hydroponics, title: "", tags: [], description: "Automated Hydroponics project details..." },
   { component: So36, title: "", tags: [], description: "SO36 project details..." },
   { component: Rugby, title: "", tags: [], description: "Rugby project details..." },
   { component: Email, title: "", tags: [], description: "Email project details..." },
