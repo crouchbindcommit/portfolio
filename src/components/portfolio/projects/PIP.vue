@@ -56,13 +56,14 @@
                   </v-list>
                 </v-list-item-content>
               </v-list-item>
-  
+    </v-list>
  
   
               <div id="pdf-container" style="position: relative; width: 100%; height: 1000px;">
                     <iframe id="pdf-frame" src="/portfolio/PIP/PIP_Presentation.pdf" type="application/pdf" width="100%"
                         height="100%"></iframe>
                 </div>
+              
           </v-card-text>
           <v-card-actions>
             <v-btn color="primary" text @click="dialog = false">Close</v-btn>
