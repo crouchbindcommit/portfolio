@@ -33,23 +33,6 @@
                     <v-list dense>
                         <v-list-item>
                             <v-list-item-content>
-                                <strong>ARM Cortex M4 PipBoy:</strong>
-                                <v-list dense>
-                                    <v-list-item>
-                                        <v-list-item-content>Using the TM4C123G to create a Lore-Accurate Pipboy
-                                        </v-list-item-content>
-                                    </v-list-item>
-                                    <v-list-item>
-                                        <v-list-item-content>Features will include radio, weather sensing, etc. Would
-                                            like to have as close to a lore accurate PIP as
-                                            possible</v-list-item-content>
-                                    </v-list-item>
-                                </v-list>
-                            </v-list-item-content>
-                        </v-list-item>
-
-                        <v-list-item>
-                            <v-list-item-content>
                                 <strong>Wearable Allergy Alarm:</strong>
                                 <v-list dense>
                                     <v-list-item>
@@ -80,7 +63,20 @@
                                 </v-list>
                             </v-list-item-content>
                         </v-list-item>
-
+                       <v-list-item>
+                            <v-list-item-content>
+                                <strong>Grace Apple Medicine Website:</strong>
+                                <v-list dense>
+                                    <v-list-item>
+                                        <v-list-item-content>Current found under <a href="https://www.graceapple.com/" target="__blank">www.graceapple.com</a> but was created before learning web development principles.
+                                        </v-list-item-content>
+                                    </v-list-item>
+                                    <v-list-item>
+                                        <v-list-item-content>Update will use ReactJS for better user experience and efficiency.</v-list-item-content>
+                                    </v-list-item>
+                                </v-list>
+                            </v-list-item-content>
+                        </v-list-item>
                     </v-list>
 
                 </v-card-text>
