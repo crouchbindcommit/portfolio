@@ -122,6 +122,7 @@
         <v-card-title> Peer Learning Assistant (Tutor) Details</v-card-title>
         <v-card-text>
            I offer 30 minute 1-on-1 tutoring and 2 hour exam review lectures through the <a href="https://studentsuccess.utk.edu/academicsuccess/vol-study-sessions-learning-consultation/" target="__blank"> Vol Study Center at the Academic Success Center at the University of Tennessee Knoxville</a>.
+           Visit my <a href="https://www.youtube.com/@mmckin22" target="__blank">Youtube</a> to see the content that I create! 
         </v-card-text>
       
         <v-card-text> 
