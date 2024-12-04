@@ -21,7 +21,7 @@
   
       <v-card-actions>
         <v-btn color="primary" @click="dialog = true">Learn More</v-btn>
-        <v-btn color="secondary" :href="projectLink" target="_blank">Visit Site</v-btn>
+        <v-btn color="secondary">You're already here!</v-btn>
       </v-card-actions>
   
       <!-- Popup for Details -->
