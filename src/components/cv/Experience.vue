@@ -3,6 +3,32 @@
     <v-card-title class="headline experience-title">Experience</v-card-title>
     <v-card-text>
       <ul>
+        
+        <li class="experience-item">
+          <v-row align="center" no-gutters>
+            <v-col cols="12">
+              <div class="position">
+                <h3 class="position-title">
+                  Computer Engineering Intern
+                  <v-btn elevation="0" icon class="detail-btn" @click="electroMechanicalDialog = true">
+                    <v-icon>mdi-information-outline</v-icon>
+                  </v-btn>
+                </h3>
+                <p class="company-name">Electro Mechanical, Bristol, TN</p>
+                <p class="duration">December 2024 - Current </p>
+              </div>
+              <p class="responsibilities-title">Responsibilities:</p>
+              <div class="responsibilities">
+                <span class="responsibility-chip">Relay Logic Design for Mechanical Switch Test</span>
+                <span class="responsibility-chip">Database Development for Test Reports and Test Data </span>
+                <span class="responsibility-chip">Inventory Database Development</span>
+                <span class="responsibility-chip">Used: SELogic, SEL Grid Configurator, AcSELerator, SEL-851, SEL-849, Microsoft Excel, HTML</span>
+              </div>
+            </v-col>
+          </v-row>
+        </li>
+
+        
         <li class="experience-item">
           <v-row align="center" no-gutters>
             <v-col cols="12">
@@ -76,6 +102,27 @@
     </v-card-text>
 
     <!-- Dialog -->
+    <v-dialog v-model="electroMechanicalDialog" max-width="600px">
+      <v-card>
+        <v-card-title> Computer Engineering Intern Details</v-card-title>
+    
+        <v-card-text>
+          I originally used Grid Configurator and an SEL-851 PLC but concluded with AcSELerator and an SEL-849 Relay in Feeder Mode to develop logic for Mechanical Switch C/O Operation Tests. The program features an automatic and manual mode: In automatic, an operator on the network can test without human intervention. In manual, the operator can manually test switch states to verify functionality. The program also features safety first design by using a remote bit as a software-side emergency disable, an emergency ESTOP between the power supply and the relay, and a cycle-kill switch input to the relay. There is also a delay and alarm to protect the operator from being caught in the switch. I documented my design using the graphical logic feature in acSELerator and HTML to write an operator's manual.
+        </v-card-text>
+
+        <v-card-text>
+         I also developed and implemented a database to organize previous Test Data and Reports. The database includes report titles, file locations, project numbers associated, rated and test voltage, rated and test current, equipment categories, and result categories. This will allow engineers to quickly locate any helpful documentation when working on projects. 
+        </v-card-text>
+
+        <v-card-text>I also developed and implemented a database to inventory spare parts that included a check-out system to allow employees on the floor to log any components they may need to use. The components include, but are not limited to, Allen-Bradley, Rockwell, and SEL brands. </v-card-text>
+       
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" @click="electroMechanicalDialog = false">Close</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+    
     <v-dialog v-model="epriDialog" max-width="600px">
       <v-card>
         <v-card-title> Fullstck Software Dev Details</v-card-title>
@@ -166,7 +213,8 @@ import { ref } from 'vue';
 
 const epriDialog = ref(false);
 const keyerDialog = ref(false);
-const tutorDialog = ref(false)
+const tutorDialog = ref(false);
+const electroMechanicalDialog = ref(false);
 </script>
 
   
