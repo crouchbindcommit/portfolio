@@ -16,6 +16,7 @@
               <v-chip class="skill-chip" color="red" text-color="white" outlined>Bash</v-chip>
               <v-chip class="skill-chip" color="purple" text-color="white" outlined>PowerShell</v-chip>
               <v-chip class="skill-chip" color="green" text-color="white" outlined>MATLAB</v-chip>
+                  <v-chip class="skill-chip" color="green" text-color="white" outlined>SELogic</v-chip>
             </div>
           </v-col>
           <v-col cols="12" md="6">
