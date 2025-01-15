@@ -9,7 +9,7 @@
             <v-col cols="12">
               <div class="position">
                 <h3 class="position-title">
-                  Computer Engineering Intern
+                  Programming Engineer Technician
                   <v-btn elevation="0" icon class="detail-btn" @click="electroMechanicalDialog = true">
                     <v-icon>mdi-information-outline</v-icon>
                   </v-btn>
@@ -104,10 +104,10 @@
     <!-- Dialog -->
     <v-dialog v-model="electroMechanicalDialog" max-width="600px">
       <v-card>
-        <v-card-title> Computer Engineering Intern Details</v-card-title>
+        <v-card-title> Programming Engineer Technician Details</v-card-title>
     
         <v-card-text>
-          I originally used Grid Configurator and an SEL-851 PLC but concluded with AcSELerator and an SEL-849 Relay in Feeder Mode to develop logic for Mechanical Switch C/O Operation Tests. The program features an automatic and manual mode: In automatic, an operator on the network can test without human intervention. In manual, the operator can manually test switch states to verify functionality. The program also features safety first design by using a remote bit as a software-side emergency disable, an emergency ESTOP between the power supply and the relay, and a cycle-kill switch input to the relay. There is also a delay and alarm to protect the operator from being caught in the switch. I documented my design using the graphical logic feature in acSELerator and HTML to write an operator's manual.
+          I originally used Grid Configurator and an SEL-851 PLC but concluded with AcSELerator and an SEL-849 Relay in Feeder Mode to develop logic for Mechanical Switch C/O Operation Tests. The program features an automatic and manual mode: In automatic, an operator on the network can test without human intervention. In manual, the operator can manually test switch states to verify functionality. The program also features safety first design by using a remote bit as a software-side Lock Out/Tag Out emergency disable, an emergency ESTOP between the power supply and the relay, and a cycle-kill switch input to the relay. There is also a delay and alarm to protect the operator from being caught in the switch. I documented my design using the graphical logic feature in acSELerator and HTML to write an operator's manual. When wiring the apparatus, I exercised IEEE color codes and proper cable management.
         </v-card-text>
 
         <v-card-text>
