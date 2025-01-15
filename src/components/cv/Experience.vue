@@ -22,6 +22,7 @@
                 <span class="responsibility-chip">Relay Logic Design for Mechanical Switch Test</span>
                 <span class="responsibility-chip">Database Development for Test Reports and Test Data </span>
                 <span class="responsibility-chip">Inventory Database Development</span>
+                  <span class="responsibility-chip">Safety-First Design</span>
                 <span class="responsibility-chip">Used: SELogic, SEL Grid Configurator, AcSELerator, SEL-851, SEL-849, Microsoft Excel, HTML</span>
               </div>
             </v-col>
