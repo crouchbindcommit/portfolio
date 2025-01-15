@@ -14,7 +14,7 @@
             <v-card-title class="portfolio-name">Makayla</v-card-title>
             <v-card-title class="portfolio-name">Mckinney.</v-card-title>
           </div>
-          <v-card-text class="portfolio-name-subtitle">Fullstack Developer. <u>Computer Engineer.</u> Dreamer. Doer.</v-card-text>
+          <v-card-text class="portfolio-name-subtitle">Programming Engineer Technician with Full-Stack Experience. <u>Computer Engineer.</u> Dreamer. Doer.</v-card-text>
           <v-btn color="#1b1a17" @click="navigateToAbout" class="navigate-btn">About Me</v-btn>
         </v-card>
       </v-container>
