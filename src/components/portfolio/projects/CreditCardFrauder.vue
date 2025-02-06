@@ -35,9 +35,8 @@
              I worked on a team of three to develop an algorithm to detect credit card fraud. I implemented the Random Forest algorithm in Python and helped generate data visualizations. I helped to implement a K Fold Cross Validation but we found the increase in accuracy from the RF base to be negligible. The Random Forest Model was improved by Ada Boosting.
             </p>
             
-            
-            <object data="/portfolio/CreditCardFrauder/Project-Poster.pdf" type="application/pdf" width="100%" height="1000px"></object>
           </v-card-text>
+          <object data="/portfolio/CreditCardFrauder/Project-Poster.pdf" type="application/pdf" width="100%" height="1000px"></object>
           <v-card-actions>
             <v-btn color="primary" text @click="dialog = false">Close</v-btn>
           </v-card-actions>
