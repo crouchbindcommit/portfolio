@@ -67,6 +67,7 @@ import Email from "@/components/portfolio/projects/Email.vue";
 import CreditCheck from "@/components/portfolio/projects/CreditCheck.vue";
 import Hydroponics from "@/components/portfolio/projects/Hydroponics.vue";
 import PIP from "@/components/portfolio/projects/PIP.vue";
+import CreditCardFrauder from "@/components/portfolio/projects/CreditCardFrauder.vue";
 import Portfolio from "@/components/portfolio/projects/Portfolio.vue";
 
 
@@ -84,6 +85,7 @@ const searchQuery = ref("");
 // Array to store project components along with their titles and tags
 const projects = ref([
   { component: PIP, title: "", tags: [], description: "PIPBoy Project Details..." },
+   { component: CreditCardFrauder, title: "", tags: [], description: "Credit Card Detection with ML Project Details..." },
   { component: Foodify, title: "", tags: [], description: "Foodify project details..." },
    { component: Portfolio, title: "", tags: [], description: "Portfolio Wesbite details..." },,
   { component: Phishing, title: "", tags: [], description: "Phishing project details..." },
