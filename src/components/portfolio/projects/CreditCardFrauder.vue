@@ -3,7 +3,7 @@
       <v-img src="/portfolio/CreditCardFrauder/poster.png" height="200px"></v-img>
       <v-card-title class="headline">{{title}}</v-card-title>
       <v-card-subtitle>
-        Machine Learning Model to Predict Credit Card Fraud Occurances.
+        Machine Learning Model to Predict Credit Fraud Occurances.
       </v-card-subtitle>
   
       <v-card-text>
@@ -36,7 +36,7 @@
             </p>
             
             
-            <object data=projectLink type="application/pdf" width="100%" height="1000px"></object>
+            <object data="/portfolio/CreditCardFrauder/Project-Poster.pdf" type="application/pdf" width="100%" height="1000px"></object>
           </v-card-text>
           <v-card-actions>
             <v-btn color="primary" text @click="dialog = false">Close</v-btn>
@@ -51,7 +51,7 @@
   
   const dialog = ref(false);
   const projectLink = "/portfolio/CreditCardFrauder/Project-Poster.pdf";
-  const title = "Credit Card Fraud Detection with Machine Learning";
+  const title = "Credit Fraud Detection with Machine Learning";
   const tags = [
     "Machine Learning",
     "Random Forest Algorithm",
