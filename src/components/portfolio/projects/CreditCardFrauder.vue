@@ -36,7 +36,7 @@
             </p>
             
           </v-card-text>
-          <object data="/portfolio/CreditCardFrauder/Project-Poster.pdf" type="application/pdf" width="100%" height="1000px"></object>
+          <object data="/portfolio/CreditCardFrauder/Project-Poster.pdf" type="application/pdf" width="100%"></object>
           <v-card-actions>
             <v-btn color="primary" text @click="dialog = false">Close</v-btn>
           </v-card-actions>
