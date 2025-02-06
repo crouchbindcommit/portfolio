@@ -23,7 +23,7 @@
         <v-dialog v-model="dialog" max-width="500px">
             <v-card>
                 <v-card-title>
-                    <span class="headline">Foodify: The Free Food Finding App</span>
+                    <span class="headline">Projects in Development</span>
                 </v-card-title>
                 <v-card-text>
                     <p>
@@ -45,20 +45,6 @@
                                             barometric pressure, pulse, and heart rate. There will also be a camera
                                             module to scan barcodes. All data will be sent to a database and displayed
                                             on an LCD screen.</v-list-item-content>
-                                    </v-list-item>
-                                </v-list>
-                            </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                            <v-list-item-content>
-                                <strong>Credit Card Detection using Machine Learning</strong>
-                                <v-list dense>
-                                    <v-list-item>
-                                        <v-list-item-content>Developing and testing algorithms based on the Random Forest Algorithm to predict whether a charge is fraudulent or not
-                                        </v-list-item-content>
-                                    </v-list-item>
-                                    <v-list-item>
-                                        <v-list-item-content>Currently have 99.8% accuracy, but next steps are to determine most valuable features and to minimize risk of overfitting.</v-list-item-content>
                                     </v-list-item>
                                 </v-list>
                             </v-list-item-content>
@@ -99,9 +85,6 @@ const tags = [
     "Embedded Systems",
     "Arm CORTEX M",
     "C",
-    "Python",
-    "Machine Learning",
-    "Random Forest Model",
 ];
 
 const emit = defineEmits(["emitTitle", "emitTags"]);
