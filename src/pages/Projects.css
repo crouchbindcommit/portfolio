@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Gamja+Flower&family=Kalam:wght@300;400;700&family=Ma+Shan+Zheng&family=Megrim&family=Rampart+One&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+/* Portfolio Page Styles */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-image: url('../assets/background/sun.jpg');
+    background-size: cover;
+}
+
+.project-card {
+    background-image: url('../assets/background/Notecard.jpg');
+    width: 100%; /* Make sure the width is flexible */
+    max-width: 650px; /* Max width to prevent it from getting too wide */
+    display: flex;
+    flex-direction: column; /* Layout is horizontal by default */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    height: auto; /* Allow the card to adjust based on content */
+    overflow: hidden;
+    aspect-ratio: 1.6;
+}
+
+.project-card-inner {
+    display: flex;
+    flex-direction: row; /* Display image and content side by side */
+    gap: 20px;
+    width: 100%;
+   /* Space between top section and "Learn More" button */
+}
+
+.project-image {
+    width: 50%; /* Image takes up half the width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+    border-radius: 10px;
+    aspect-ratio: 1.6;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100%;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1b4e9f;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family:'creepster';
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.project-tags {
+    display: flex;
+    font-family: 'Megrim';
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    visibility: visible; /* Tags visible by default */
+    max-height: 150px; /* Adjust the max height as needed */
+    overflow: hidden; /* Hide overflowing tags */
+    transition: visibility 0.3s ease-in-out;
+    flex-shrink: 1; /* Allow shrinking of tags section */
+}
+
+.project-tags span {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.project-tags span:hover {
+    background-color: #0056b3;
+}
+
+.project-button {
+    background-color: #1b4e9f;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%; /* Make button span across the card */
+    visibility: visible;
+}
+
+.search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input-container {
+    position: relative;
+    width: 80%; /* Adjust the width of the search container */
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 10px 10px 30px; /* Extra padding on the left for the icon */
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #1b4e9f;
+  }
+  
+  /* Style the search icon */
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Adjust position as needed */
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #aaa; /* Gray color for the icon */
+  }
+  
+  
+
+
+
+
+
+/* General Styling for the Project Detail */
+.project-detail-container {
+    background-image: url('../assets/background/dark-texture.jpg');
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+  }
+  
+  .project-detail {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .project-header {
+    margin-bottom: 20px;
+  }
+  
+  .project-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1b4e9f;
+    margin-bottom: 10px;
+  }
+  
+  .project-summary {
+    font-size: 1.25rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Styling for h2 (Main headers for sections like Description and Tech Stack) */
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1b4e9f; /* Adds a line below h2 */
+    padding-bottom: 5px;
+    margin-top: 40px; /* Space above each section */
+  }
+  
+  .project-description {
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .project-main-content {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Styling for h3 (Subsection headers like Technologies Used) */
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1b4e9f;
+    margin-bottom: 10px;
+  }
+  
+  /* Tech Stack List Styling */
+  .tech-stack ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tech-stack ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for Links */
+  .project-links a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px 20px;
+    background-color: #1b4e9f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .project-links a:hover {
+    background-color: #0066cc;
+  }
+  
+  .documents {
+    margin-top: 30px;
+  }
+  
+  .document-button {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .document-button:hover {
+    background-color: #0056b3;
+  }
+  

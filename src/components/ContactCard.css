@@ -1,0 +1,98 @@
+/* Social Cards Styling */
+.contact-card-container{
+    flex-wrap: wrap; /* Allow wrapping if necessary for responsive behavior */
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px; /* Maintain space between cards */
+    margin-top: 40px;
+    padding: 0 20px; 
+    z-index: 1;
+}
+
+.social-cards {
+    display: flex;
+    justify-content: space-around; /* Ensure cards are spaced out evenly */
+    gap: 30px; /* Maintain space between cards */
+    margin-top: 40px;
+    flex-wrap: wrap; /* Allow wrapping if necessary for responsive behavior */
+    flex-direction: row;
+}
+
+
+.social-card {
+    background-color: #fff;
+    padding: 20px;
+    justify-content:baseline;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: auto; /* Default to full width on smaller screens */
+    max-width: 220px; /* Adjust the width for the cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-grow: 1; /* Allow the cards to grow and take available space */
+}
+
+/* Card Header Styling */
+.social-card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-card i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+/* Card Description Styling */
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Hover Effect for Social Cards */
+.social-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling the Go Button */
+.go-button {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background for the button */
+    color: white; /* White text */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s, transform 0.3s; /* Add transition effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle 3D effect */
+    margin-top: 10px; /* Space above the button */
+  }
+  
+  /* Hover effect for the button */
+  .go-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-3px); /* Lift the button slightly on hover */
+  }
+  
+  /* Focus effect for better accessibility */
+  .go-button:focus {
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add a blue glow when the button is focused */
+  }
+  
+  /* Active effect when clicked */
+  .go-button:active {
+    background-color: #388e3c; /* Even darker green on click */
+    transform: translateY(1px); /* Slightly push the button down when clicked */
+  }
+  

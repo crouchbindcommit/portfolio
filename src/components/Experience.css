@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* dim background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  width: 75%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  border: 4px dashed #5b3a29; /* scrapbook edge style */
+  border-radius: 12px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 80vw;
+  font-family: 'Permanent Marker', cursive; /* Comic-y, scrapbook style */
+  color: #2b1d0e;
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+  z-index: 1001;
+  background-image: url('../assets/background/Notecard.jpg'); 
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.close-button {
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-button:hover {
+  background: #1f2937;
+}
+
+
+
+
+.timeline-container {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    margin: 2rem auto;
+    padding: 2rem 0;
+
+    width: 100%;
+    max-width: 1000px;
+    margin-top:1rem;
+  }
+  .timeline-item:first-child {
+    margin-top: 1rem; /* or even 0 */
+  }
+  
+  .cv-heading{
+    font-family: "Iceberg";
+    z-index: 1;
+
+  }
+  /* Left vertical line */
+  .timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 60px;
+    width: 4px;
+    background: #91908d;
+    z-index: 0;
+    bottom: 0;
+  }
+  
+  /* Timeline item */
+  .timeline-item {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2rem 0;
+    padding-left: 100px;
+    
+    
+  }
+  
+  /* Dot marker */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 52px;
+    width: 16px;
+    height: 16px;
+    background-color: #e55b10;
+    border: 4px solid white;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Date label */
+  .timeline-dates {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #0e0e0e;
+    padding: 8px 12px;
+    white-space: nowrap;
+    font-family: "Pacifico";
+    transform: translateY(-50%);
+    background-color: #e55b10;
+    border-radius: 20px;
+    width: fit-content;
+  }
+  
+  
+  .timeline-content {
+    background-image: url('../assets/background/card.jpg');
+    padding: 1rem 1.5rem;
+    padding-left: 2rem; /* <-- This adds left-side padding */
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    
+  }
+  
+  
+  /* Button */
+  .details-button {
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    background-color: #111827;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .details-button:hover {
+    background-color: #1f2937;
+  }
+  

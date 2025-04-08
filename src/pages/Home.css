@@ -1,0 +1,264 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Ma+Shan+Zheng&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Gamja+Flower&family=Ma+Shan+Zheng&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Gamja+Flower&family=Ma+Shan+Zheng&family=Rampart+One&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Gamja+Flower&family=Kalam:wght@300;400;700&family=Ma+Shan+Zheng&family=Rampart+One&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Gamja+Flower&family=Kalam:wght@300;400;700&family=Ma+Shan+Zheng&family=Rampart+One&family=VT323&display=swap');
+/* Home.css */
+/* Home.css */
+
+/* Wrapper for the Home page (paper background) */
+.home-page {
+    background-image: url('../assets/background/wall.jpg'); /* Paper texture */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center the card horizontally */
+    align-items: center; /* Center the card vertically */
+    position: relative;
+  }
+  
+  /* Adding a gradient overlay to make the content stand out */
+  .home-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Light white overlay */
+    z-index: -1;
+  }
+
+  .card-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(77, 76, 76, 0.114); /* Adjust opacity for desired effect */
+    border-radius: 12px;
+    z-index: -1; /* Keep overlay behind text */
+  }
+  
+  
+  /* Business card container - Adjusted to be horizontal */
+  .card-container {
+    background-image: url('../assets/background/yellow.png'); 
+    border-radius: 12px;
+    padding: 2rem;
+    width: 90vw; /* 90% of the viewport width */
+    height: auto; /* Allow height to adjust proportionally */
+    max-width: 800px; /* Maximum width for large screens */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    display: flex;
+    flex-direction: row; /* Arrange elements horizontally */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+    aspect-ratio: 1.5; /* Maintain a 1.5:1 aspect ratio */
+  }
+  
+  /* Hover effect for the card (slight lift effect) */
+  .card-container:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Profile Image Style */
+  .profile-image {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-image img {
+    width: 35vw; /* 35% of the viewport width */
+    height: auto;
+    object-fit: cover;
+    margin-right: -1px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect on profile image (slight zoom) */
+  .profile-image img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Message box that shows when hovering over the image */
+  .profile-image .hover-message {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    width: max-content;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show message when hovering over the image */
+  .profile-image:hover .hover-message {
+    display: block;
+    opacity: 1; /* Fade in the message */
+  }
+  
+  /* Text content area */
+  .card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /* Tagline styling - playful fonts */
+  .tagline {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    text-align: left; /* Left-align tagline text */
+    
+  }
+  
+  /* Script font for "Hi" */
+  .hi {
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 3rem; /* Increase font size */
+    color: #343434;
+    font-weight: bold; /* Make it thicker */
+    margin-bottom: 0.2rem; /* Reduce the gap below "Hi, I'm" */
+    line-height: 1.1;
+  }
+  
+  /* Font for "I’m" */
+  .im {
+    font-family: 'Gamja Flower', serif;
+    font-size: 3rem; /* Increase font size */
+    color: #343434;
+    font-weight: bold; /* Make it thicker */
+    margin-left: 0.5rem;
+    margin-bottom: 0.2rem; /* Reduce the gap below "Hi, I'm" */
+    line-height: .5; 
+  }
+  
+  /* Bold font for "Mak" */
+  .mak {
+    font-family: 'Rampart One', sans-serif;
+    font-size: 8rem; /* Increase font size */
+    font-weight: 900; /* Extra bold */
+    color: #ffffff;
+    line-height: 1; 
+    margin-bottom: 0.2rem; 
+  }
+  
+  /* Handwritten font for "I build things" */
+  .build-things {
+    font-family: 'Kalam', cursive;
+    font-size: 2.5rem; /* Increase font size */
+    color: #343434;
+    font-style: italic;
+    font-weight: bold; /* Make it thicker */
+    line-height:.5;
+  }
+  
+  /* Button styling */
+  .see-work-btn {
+    background-color: #e86a2b;
+    font-family: 'VT323';
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect on button */
+  .see-work-btn:hover {
+    background-color: #ff7f32;
+    transform: scale(1.05);
+  }
+  
+  /* Footer links */
+  .card-content footer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .card-content footer a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .card-content footer a:hover {
+    color: #008000;
+  }
+  
+  /* Add a subtle scroll indicator */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: #e86a2b;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .scroll-indicator:hover {
+    color: #ff7f32;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    .card-container {
+      width: 90%; /* Make the card smaller on mobile */
+      padding: 1rem;
+    }
+  
+    /* Adjust the profile image size for mobile */
+    .profile-image img {
+      width: 30vw; /* 30% of the viewport width */
+      margin-right: 1rem;
+    }
+  
+    /* Adjust text size for mobile */
+    .card-content h1 {
+      font-size: 2rem; /* Smaller font for name on mobile */
+    }
+  
+    .card-content h2 {
+      font-size: 1.2rem; /* Smaller font for subtitle on mobile */
+    }
+  
+    .card-content button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Custom class for smaller line breaks */
+  .small-gap {
+    margin-bottom: -5px; /* Adjust this value to control the gap */
+  }
+  

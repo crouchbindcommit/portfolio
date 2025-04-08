@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Gamja+Flower&family=Kalam:wght@300;400;700&family=Ma+Shan+Zheng&family=Megrim&family=Rampart+One&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+.skills-container {
+    padding: 40px 20px;
+    background-image: url('../assets/background/news.jpg'); 
+    margin: 0 auto;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    border-radius: 30px;
+
+  }
+  
+  .skills-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    font-family:"Allerta Stencil";
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-category {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, #ffffff, #f3f4f6);
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-category:hover {
+    transform: scale(1.02);
+  }
+  
+  .skill-category h3 {
+    color: #000000; /* Tailwind's emerald-500 */
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .skill-badge {
+    display: inline-block;
+    margin: 0.4rem 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #bdb51b;
+    color: #000000;
+    font-family:"Megrim";
+    font-weight: 500;
+    border-radius: 9999px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: background 0.2s ease;
+  }
+  
+  .skill-badge:hover {
+    background-color: #121212;
+    cursor: default;
+  }
+  
+  .category-title {
+    font-size: 1.8rem;
+    color: #070707;
+    font-family: "Gloria Hallelujah";
+    margin-bottom: 10px;
+  }
+  
+  .skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill {
+    font-size: 1.1rem;
+    color: #000000;
+    margin: 5px 15px;
+    background-color: #bdb51b;
+    font-family:"Megrim";
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skill:hover {
+    background-color: #ec8219;
+    color: white;
+  }
+  

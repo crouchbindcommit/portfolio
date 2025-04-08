@@ -1,0 +1,77 @@
+/* Navbar Styling */
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+
+.navbar {
+    background-color: #fff;
+    padding: 15px 30px;
+    position:sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url('../assets/background/green.jpg'); /* Add textured background */
+    background-size: cover;
+    border: 5px dashed #000000; /* Create a dashed border to mimic scrapbook style */
+    border-radius: 5px;
+  }
+  
+  /* Navbar List Styling */
+  .navbar-list {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #9e9a9a;
+    font-family: 'Frijole';
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #b8b8b8;
+    transform: translateY(-5px); /* Slight lifting effect */
+  }
+  
+  /* Create a hand-drawn underline effect on hover */
+  .navbar-link:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #b8b8b8;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-link:hover:before {
+    width: 100%;
+  }
+  
+  /* Active state for the navbar link */
+  .navbar-link.active {
+    color: #ffffff; /* Highlight active link */
+  }
+  
+  /* Highlight bar styling */
+  .navbar-highlight {
+    position: absolute;
+    bottom: 0; /* Position it at the bottom of the navbar */
+    height: 5px; /* Height of the highlight bar */
+    background-color: #ffffff; /* Green color for highlight */
+    transition: left 0.3s ease, width 0.3s ease; /* Smooth sliding effect */
+  }
+  
+  /* Additional Fun Styles for Scrapbook Feel */
+  .navbar-list li {
+    position: relative;
+  }
+  

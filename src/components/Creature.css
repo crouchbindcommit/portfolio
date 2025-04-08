@@ -1,0 +1,69 @@
+.creature {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 45vh;
+    background-color: #ffeb3b;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .creature-eyes {
+    position: relative;
+    width: 180px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .eye {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: transform 0.1s ease-out;
+    transition: transform 0.3s ease;
+  }
+  
+  .left-eye {
+    position: absolute;
+    left: 20px;
+  }
+  
+  .right-eye {
+    position: absolute;
+    right: 20px;
+  }
+  
+  /* Flat Mouth Styling */
+  .creature-mouth {
+    width: 100px;
+    height: 10px; /* Flat line initially */
+    background-color: #000;
+    position: absolute;
+    bottom: 10px; /* Position below the eyes */
+    border-radius: 0px; /* Flat shape */
+    transition: transform 0.5s ease, border-radius 0.3s ease;
+  }
+  
+  /* Smile Effect - Make the mouth curve into a smile */
+  .smiling .creature-mouth {
+    transform: rotate(180deg); /* No rotation */
+    border-radius: 50% / 100% 100% 0 0; /* Create the curved smile */
+    width: 120px; /* Slightly wider for the smile */
+    height: 20px; /* Make the smile slightly thicker */
+  }
+
+  .smiling .creature-eyes {
+    transform: scale(1.5);
+  }
+  
+ 
