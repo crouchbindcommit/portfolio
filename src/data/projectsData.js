@@ -13,7 +13,7 @@ import emailImage from '../assets/portfolio/email-sender/cover.png';
 import creditImage from '../assets/portfolio/credit-check/cover.png';
 import allergyImage from '../assets/portfolio/allergy-alarm/cover.png';
 import portfolioImage from '../assets/portfolio/portfolio/cover.png';
-
+import spearPhishImage from '../assets/portfolio/spear-phish/cover.png'; 
 
 
 //documents 
@@ -36,14 +36,12 @@ const projectsData = [
     shortDescription: 'A wearable information hub inspired by the Fallout universe. Provides real-time data, tunes, weather updates, and more.',
     longDescription: `
       <h2>Project Overview</h2>
-      <p>The <strong>PIPBoy MARK I</strong> is a wearable device designed to be the ultimate companion in the post-apocalyptic world, inspired by the iconic PIPBoy from the *Fallout* video game series. In a world ravaged by nuclear disaster, this device serves as a <em>survival companion</em> by offering essential functions such as real-time weather, location tracking, health monitoring, and more—all in a compact and user-friendly interface.</p>
-      <p>The device is built on a fully embedded system, offering a unique alternative to larger, less space-efficient systems commonly used in similar projects. Unlike many modern PIPBoy replicas, which often rely on Python or operating systems, the MARK I operates seamlessly on a microcontroller-based system without an operating system, ensuring greater space efficiency and faster performance.</p>
+      <p>The <strong>PIPBoy MARK I</strong> is a device designed to be the ultimate companion in the post-apocalyptic world, inspired by the iconic PIPBoy from the Fallout video game series. In a world ravaged by nuclear disaster, this device serves as a <em>survival companion</em> by offering essential functions such as real-time weather, music, and beautiful screen displays in a compact and user-friendly interface.</p>
+      <p>The device is built on a fully embedded system, though remains bulky true to the in-game device..</p>
       <h3>Key Features:</h3>
       <ul>
         <li><strong>Real-Time Weather:</strong> Fetches real-time weather data to ensure the wearer is prepared for the elements.</li>
-        <li><strong>Health Metrics:</strong> Monitors vital statistics and provides health updates.</li>
         <li><strong>Audio and Sound:</strong> Plays ambient audio, music, and more to enhance the survival experience.</li>
-        <li><strong>Location Tracking:</strong> GPS integration for navigation and map functionalities.</li>
       </ul>
       <h3>Technologies Used:</h3>
       <ul>
@@ -625,7 +623,51 @@ const projectsData = [
       { name: '', url: '' },
 
     ],
+  },
+
+  {
+    title: 'Spear Phish Simulator',
+    shortDescription: 'An ethical simulation of a targeted spear phishing attack, designed to explore adversarial reasoning in cybersecurity.',
+    longDescription: `
+      <h2>Project Overview</h2>
+      <p><strong>Spear Phish Simulator</strong> is an educational project designed to emulate the process of crafting a highly targeted spear phishing attempt. The project was developed as part of a cybersecurity assignment in my Data Driven Security and Privacy course, with the purpose of understanding how adversaries exploit trust, tone, and context to appear credible.</p>
+      
+      <h3>Ethical Disclosure:</h3>
+      <p>This project does <em>not</em> send real phishing emails or engage in unauthorized data collection. Instead, it uses AI reasoning tools to demonstrate the logic behind adversarial communication, offering insight into how to better defend against it.</p>
+  
+      <h3>Key Features:</h3>
+      <ul>
+        <li><strong>Chain-of-Thought Prompting:</strong> Uses structured prompts to walk through how an attacker might analyze and craft a spear phishing email.</li>
+        <li><strong>LLM Simulation:</strong> Leverages large language models to simulate adversarial reasoning in a step-by-step manner.</li>
+        <li><strong>Security Introspection:</strong> Includes code vulnerability analysis and rewrite recommendations based on model feedback.</li>
+        <li><strong>Adversarial Email Crafting:</strong> Explores how attackers choose tone, content, and targets to optimize for deception—without ever executing a real attack.</li>
+      </ul>
+  
+      <h3>Technologies Used:</h3>
+      <ul>
+        <li>Python</li>
+        <li>Gemini API (Generative Language Models)</li>
+        <li>Base64 image encoding</li>
+        <li>Secure coding practices</li>
+        <li>Prompt engineering</li>
+      </ul>
+  
+      <p>This project serves as a thought experiment and learning opportunity for anyone studying cybersecurity defense, adversarial machine learning, or social engineering mitigation strategies.</p>
+    `,
+    image: spearPhishImage, // Add a fun/serious mockup later (e.g., fake terminal, AI brain, mail envelope)
+    skills: [
+      'Cybersecurity', 'Python', 'LLM Prompt Engineering',
+      'Chain of Thought', 'Secure Coding', 'Adversarial Thinking', 'Ethical Hacking'
+    ],
+    github: 'https://github.com/crouchbindcommit/spear-phish-simulator',
+    liveDemo: '',
+    documents: [
+      {
+        
+      }
+    ],
   }
+  
 
   // Add more projects here...
 ];
