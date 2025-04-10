@@ -12,6 +12,16 @@
   background-size: cover;
 }
 
+.project-grid-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  padding: 10px;
+}
+
+
 .project-card {
   background-image: url('../assets/background/Notecard.jpg');
   width: 100%;
@@ -75,42 +85,12 @@
   overflow: hidden;
 }
 
-.project-tags {
-  display: flex;
-  font-family: 'Megrim';
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-  visibility: visible;
-  /* Tags visible by default */
-  max-height: 150px;
-  /* Adjust the max height as needed */
-  overflow: hidden;
-  /* Hide overflowing tags */
-  transition: visibility 0.3s ease-in-out;
-  flex-shrink: 1;
-  /* Allow shrinking of tags section */
-}
-
-.project-tags span {
-  background-color: #007BFF;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  cursor: pointer;
-}
-
-.project-tags span:hover {
-  background-color: #0056b3;
-}
-
 .project-button {
   background-color: #1b4e9f;
   color: white;
   padding: 10px 20px;
   text-transform: uppercase;
+  font-family: 'Megrim';
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;

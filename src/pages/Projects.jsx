@@ -19,7 +19,6 @@ const Projects = () => {
     slides: { origin: 'center', perView: 1, spacing: 20 },
   });
 
-  // Autoplay with pause-on-hover
   useEffect(() => {
     if (viewMode === 'carousel' && slider) {
       clearInterval(timerRef.current);
@@ -45,24 +44,15 @@ const Projects = () => {
       <div className="portfolio-container relative flex flex-col items-center">
         {/* View Toggle Buttons */}
         <div className="flex justify-center gap-4 my-4">
-          <button
-            onClick={() => setViewMode('grid')}
-            className={`view-toggle-button ${viewMode === 'grid' ? 'active' : ''}`}
-          >
-            Grid
-          </button>
-          <button
-            onClick={() => setViewMode('list')}
-            className={`view-toggle-button ${viewMode === 'list' ? 'active' : ''}`}
-          >
-            List
-          </button>
-          <button
-            onClick={() => setViewMode('carousel')}
-            className={`view-toggle-button ${viewMode === 'carousel' ? 'active' : ''}`}
-          >
-            Carousel
-          </button>
+          {['grid', 'list', 'carousel'].map((mode) => (
+            <button
+              key={mode}
+              onClick={() => setViewMode(mode)}
+              className={`view-toggle-button ${viewMode === mode ? 'active' : ''}`}
+            >
+              {mode.charAt(0).toUpperCase() + mode.slice(1)}
+            </button>
+          ))}
         </div>
 
         {/* Search Bar */}
@@ -79,19 +69,19 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Projects Section */}
+        {/* No Results */}
         {filteredProjects.length === 0 ? (
           <div className="w-full text-center">
             <p>No results found</p>
           </div>
         ) : viewMode === 'carousel' ? (
+          // Carousel View
           <div
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className="carousel-container"
             ref={sliderRef}
           >
-            {/* Arrows */}
             <button
               onClick={() => slider.current?.prev()}
               className="carousel-arrow absolute left-4 top-1/2 transform -translate-y-1/2 z-10 px-3 py-2 rounded-full shadow"
@@ -105,7 +95,6 @@ const Projects = () => {
               ›
             </button>
 
-            {/* Slides */}
             {filteredProjects.map((project, index) => {
               const link = `/projects/${project.title.replace(/\s+/g, '-').toLowerCase()}`;
               return (
@@ -122,34 +111,38 @@ const Projects = () => {
                       </h3>
                     </div>
                   </Link>
-
                 </div>
               );
             })}
           </div>
-        ) : (
+        ) : viewMode === 'list' ? (
+          // List View
           filteredProjects.map((project, index) => {
             const link = `/projects/${project.title.replace(/\s+/g, '-').toLowerCase()}`;
-
-            if (viewMode === 'list') {
-              return (
-                <div key={index} className="list-card w-full max-w-4xl">
-                  <h2 className="project-title">{project.title}</h2>
-                  <p className="project-description">{project.shortDescription}</p>
-                  <Link to={link} className="project-button w-max">Learn More</Link>
-                </div>
-              );
-            }
-
-            // Grid view
             return (
-              <Link key={index} to={link} className="project-card-link">
-                <div className="project-card">
-                  <ProjectCard project={project} />
-                </div>
-              </Link>
+              <div key={index} className="list-card w-full max-w-4xl mb-6">
+                <h2 className="project-title">{project.title}</h2>
+                <p className="project-description">{project.shortDescription}</p>
+                <Link to={link} className="project-button w-max">
+                  Learn More
+                </Link>
+              </div>
             );
           })
+        ) : (
+          // Grid View with 50vw Cards
+          <div className="project-grid-wrap">
+            {filteredProjects.map((project, index) => {
+              const link = `/projects/${project.title.replace(/\s+/g, '-').toLowerCase()}`;
+              return (
+                <Link key={index} to={link} className="project-card-link">
+                  <div className="project-card">
+                    <ProjectCard project={project} />
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         )}
       </div>
     </div>
