@@ -29,6 +29,8 @@ import alarmReport from '../assets/portfolio/allergy-alarm/design-report.pdf';
 import alarmDemo from '../assets/portfolio/allergy-alarm/demo.mp4';
 import packedTerminal from '../assets/portfolio/terminal-ui/fallout-gmail.crx';
 import terminalDemo from '../assets/portfolio/terminal-ui/demo.gif';
+import terminalUnpacked from '../assets/portfolio/terminal-ui/fallout-gmail.zip';
+
 
 const projectsData = [
   {
@@ -135,6 +137,10 @@ const projectsData = [
         url: packedTerminal,
       },
       {
+        name: 'Unpacked Extension (ZIP) Download',
+        url: terminalUnpacked,
+      },
+      {
         name: 'Privacy Policy',
         url: 'https://github.com/crouchbindcommit/fallout-gmail/blob/main/privacy.md',
       },
@@ -142,6 +148,7 @@ const projectsData = [
         name: 'Terms of Service',
         url: 'https://github.com/crouchbindcommit/fallout-gmail/blob/main/tos.md',
       },
+      
     ],
   },  
 
