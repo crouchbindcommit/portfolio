@@ -15,6 +15,9 @@ import allergyImage from '../assets/portfolio/allergy-alarm/cover.png';
 import portfolioImage from '../assets/portfolio/portfolio/cover.png';
 import spearPhishImage from '../assets/portfolio/spear-phish/cover.png'; 
 import terminalUi from '../assets/portfolio/terminal-ui/cover.png'; 
+import writingImage from '../assets/portfolio/library/cover.png'; 
+
+
 
 //documents 
 import creditFraudPoster from '../assets/portfolio/credit-fraud/poster.pdf';
@@ -30,6 +33,10 @@ import alarmDemo from '../assets/portfolio/allergy-alarm/demo.mp4';
 import packedTerminal from '../assets/portfolio/terminal-ui/fallout-gmail.crx';
 import terminalDemo from '../assets/portfolio/terminal-ui/demo.gif';
 import terminalUnpacked from '../assets/portfolio/terminal-ui/fallout-gmail.zip';
+import electricVehiclesPaper from '../assets/portfolio/library/electric-vehicles.pdf'; 
+import onThinIcePaper from '../assets/portfolio/library/thin-ice.pdf';
+import halloOderHolaPaper from '../assets/portfolio/library/hallo-oder-hola.pdf'; 
+
 
 
 const projectsData = [
@@ -672,7 +679,7 @@ const projectsData = [
     github: 'https://github.com/breanna-s/portfolio-site', // Replace with actual repo if public
     liveDemo: 'https://www.makmckinney.com',
     documents: [
-      { name: '', url: '' },
+      { name: 'Legacy Portfolio (using VueJS)', url: 'https://makm-legacy-portfolio.netlify.app/' },
 
     ],
   },
@@ -706,7 +713,7 @@ const projectsData = [
   
       <p>This project serves as a thought experiment and learning opportunity for anyone studying cybersecurity defense, adversarial machine learning, or social engineering mitigation strategies.</p>
     `,
-    image: spearPhishImage, // Add a fun/serious mockup later (e.g., fake terminal, AI brain, mail envelope)
+    image: spearPhishImage,
     skills: [
       'Cybersecurity', 'Python', 'LLM Prompt Engineering',
       'Chain of Thought', 'Secure Coding', 'Adversarial Thinking', 'Ethical Hacking'
@@ -718,10 +725,62 @@ const projectsData = [
         
       }
     ],
+  },
+
+  {
+    title: 'Misc Writing Samples',
+    shortDescription: 'Various Papers in English and German.',
+    longDescription: `
+     <h2>Project Overview</h2>
+  <p><strong>Misc Writing Samples</strong> is a curated selection of analytical, research, and critical essays written in both English and German. These works span a variety of topics, from technology policy to multilingualism in film and Holocaust memory studies. Each piece reflects a different intersection of my academic background in computer engineering, German studies, and the humanities.</p>
+
+  <h3>Included Works:</h3>
+  <ul>
+    <li><strong>Electric Vehicles and Load-Time Balancing:</strong> A technical paper examining infrastructure strain and energy optimization strategies in the age of electric vehicles.</li>
+    <li><strong>On Thin Ice:</strong> A critical essay exploring the commercialization of Holocaust memory and the ethical boundaries between remembrance and marketing.</li>
+    <li><strong>Hallo oder Hola:</strong> A German-language analysis of multilingualism and cultural identity in the film <em>Guten Tag, Ramón</em>, with particular focus on code-switching and language politics.</li>
+  </ul>
+
+  <h3>Key Themes:</h3>
+  <ul>
+    <li>Cross-disciplinary analysis and communication</li>
+    <li>Language as a lens for identity and memory</li>
+    <li>Ethical critique in both historical and technical contexts</li>
+  </ul>
+
+  <h3>Skills Demonstrated:</h3>
+  <ul>
+    <li>Critical thinking and written communication in multiple languages</li>
+    <li>Research and synthesis of complex topics</li>
+    <li>Academic writing in humanities and technical disciplines</li>
+  </ul>
+
+  <p>Whether you're interested in sociotechnical systems, global film, or cultural memory, these samples offer a glimpse into my ability to write across fields, languages, and disciplines.</p>
+    `,
+    image: writingImage, 
+    skills: [
+      "Writing", "Communication", "German Language", "English Language", "Critical Analysis", "Holocaust Studies", "Technical Analysis", "Film Analysis"
+    ],
+    github: '',
+    liveDemo: '',
+    documents: [
+      {
+        name: 'Electric Vehicles and LT Balancing', 
+        url: electricVehiclesPaper
+      },
+      {
+        name: 'On Thin Ice: The Line between Holocaust Remembrance and Marketing',
+        url: onThinIcePaper
+      },
+      {
+        name: ' Hallo oder Hola: Mehrsprachigen im Film Guten Tag, Ramon',
+        url: halloOderHolaPaper,
+      },
+
+    ],
   }
   
 
-  // Add more projects here...
 ];
 
 export default projectsData;
