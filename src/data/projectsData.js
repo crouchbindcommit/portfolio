@@ -37,7 +37,7 @@ const projectsData = [
     longDescription: `
       <h2>Project Overview</h2>
       <p>The <strong>PIPBoy MARK I</strong> is a device designed to be the ultimate companion in the post-apocalyptic world, inspired by the iconic PIPBoy from the Fallout video game series. In a world ravaged by nuclear disaster, this device serves as a <em>survival companion</em> by offering essential functions such as real-time weather, music, and beautiful screen displays in a compact and user-friendly interface.</p>
-      <p>The device is built on a fully embedded system, though remains bulky true to the in-game device..</p>
+      <p>The device is built on a fully embedded system, though remains bulky true to the in-game device.</p>
       <h3>Key Features:</h3>
       <ul>
         <li><strong>Real-Time Weather:</strong> Fetches real-time weather data to ensure the wearer is prepared for the elements.</li>
