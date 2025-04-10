@@ -269,14 +269,14 @@ const projectsData = [
     shortDescription: 'A benign attack website to practice security principles.',
     longDescription: `
     <h2>Project Overview</h2>
-<p><strong>Malicious Canvas Doupe</strong> is a demonstration of a malicious website designed to showcase a potential security vulnerability, specifically focusing on **SQL Injection** attacks. In this project, I worked with three other students to build a malicious site capable of stealing user login details and executing automatic downloads of harmful files. The website was designed to simulate a **Trojan virus attack**, using a benign text document as a placeholder for the malicious payload.</p>
+<p><strong>Malicious Canvas Doupe</strong> is a demonstration of a malicious website designed to showcase a potential security vulnerability, specifically focusing on SQL Injection attacks. In this project, I worked with three other students to build a malicious site capable of stealing user login details and executing automatic downloads of harmful files. The website was designed to simulate a Trojan virus attack, using a benign text document as a placeholder for the malicious payload.</p>
 
-<p>While the project was intended for educational purposes, it highlights the risks associated with improperly secured websites and demonstrates how a **SQL Injection** vulnerability can be exploited to steal sensitive user information, including login credentials. The **automatic download** feature was set up to simulate how an attacker could use this vulnerability to inject and execute harmful software, such as a **Trojan virus**.</p>
+<p>While the project was intended for educational purposes, it highlights the risks associated with improperly secured websites and demonstrates how a SQL Injection vulnerability can be exploited to steal sensitive user information, including login credentials. The automatic download feature was set up to simulate how an attacker could use this vulnerability to inject and execute harmful software, such as a Trojan virus.</p>
 
 <h3>Key Features:</h3>
 <ul>
-<li><strong>Ability to Steal Login Information:</strong> The site utilizes a **SQL Injection** vulnerability to access user login details from the backend database. This feature highlights the risks of improperly secured user authentication systems.</li>
-<li><strong>Automatic Download:</strong> The website automatically triggers a download of a file, simulating the behavior of a **Trojan virus** that could be used to infect a user's device. In this case, a benign text document is used as a placeholder.</li>
+<li><strong>Ability to Steal Login Information:</strong> The site utilizes a SQL Injection vulnerability to access user login details from the backend database. This feature highlights the risks of improperly secured user authentication systems.</li>
+<li><strong>Automatic Download:</strong> The website automatically triggers a download of a file, simulating the behavior of a Trojan virus that could be used to infect a user's device. In this case, a benign text document is used as a placeholder.</li>
 <li><strong>SHA-256 Hash Display:</strong> The "virus" displays a SHA-256 hash, providing a sense of transparency and comfort for the user, while also demonstrating how attackers can use cryptographic hashes in malicious activities.</li>
 <li><strong>Educational Purpose:</strong> This project is a proof of concept, intended to demonstrate the importance of securing user input and preventing SQL injection vulnerabilities in web applications.</li>
 </ul>
@@ -284,8 +284,8 @@ const projectsData = [
 <h3>Technologies Used:</h3>
 <ul>
 <li><strong>SQL Injection:</strong> The primary attack vector, where untrusted input was used to manipulate SQL queries and gain unauthorized access to sensitive data.</li>
-<li><strong>Web Development:</strong> The website was developed using **HTML**, **CSS**, and **JavaScript**, with a backend vulnerability that allowed for the exploitation of user data.</li>
-<li><strong>SHA-256 Hashing:</strong> The use of **SHA-256 hashes** to simulate how malicious software might use cryptographic techniques to mask or disguise its true purpose.</li>
+<li><strong>Web Development:</strong> The website was developed using HTML, CSS, and JavaScript, with a backend vulnerability that allowed for the exploitation of user data.</li>
+<li><strong>SHA-256 Hashing:</strong> The use of SHA-256 hashes to simulate how malicious software might use cryptographic techniques to mask or disguise its true purpose.</li>
 <li><strong>Trojan Simulation:</strong> The automatic download functionality demonstrated how attackers can exploit a web vulnerability to trigger harmful downloads.</li>
 </ul>
 
@@ -297,7 +297,7 @@ const projectsData = [
 </ul>
 
 <h3>Conclusion:</h3>
-<p>The <strong>Malicious Canvas Doupe</strong> project serves as a powerful example of the dangers posed by unprotected SQL databases and the potential consequences of **SQL injection** vulnerabilities. Through this demonstration, we illustrated how attackers can exploit such vulnerabilities to steal sensitive information and deploy harmful software on a user's system.</p>
+<p>The <strong>Malicious Canvas Doupe</strong> project serves as a powerful example of the dangers posed by unprotected SQL databases and the potential consequences of SQL injection vulnerabilities. Through this demonstration, we illustrated how attackers can exploit such vulnerabilities to steal sensitive information and deploy harmful software on a user's system.</p>
 
 <p>While the project was not intended to cause harm, it serves as a reminder of the importance of securing web applications against common vulnerabilities. Developers must ensure proper validation and sanitization of user inputs to avoid exploitation through SQL injection and similar attack techniques.</p>
 
@@ -386,9 +386,9 @@ const projectsData = [
     shortDescription: 'HTML Website to display visual culture and filmspace.',
     longDescription: `
     <h2>Project Overview</h2>
-<p><strong>German Film Project Website</strong> is a visual representation designed to explore the relationship between color, film, and the cultural significance of Berlin's **SO36** district, as portrayed in cinema. Instead of opting for a traditional essay format, I chose web development to offer greater accessibility to my work while also setting the visual tone for my analysis. The website serves as a resource for those seeking to understand the cultural and cinematic importance of SO36, with a particular focus on the 1984 film <em>Decoder</em>.</p>
+<p><strong>German Film Project Website</strong> is a visual representation designed to explore the relationship between color, film, and the cultural significance of Berlin's SO36 district, as portrayed in cinema. Instead of opting for a traditional essay format, I chose web development to offer greater accessibility to my work while also setting the visual tone for my analysis. The website serves as a resource for those seeking to understand the cultural and cinematic importance of SO36, with a particular focus on the 1984 film <em>Decoder</em>.</p>
 
-<p>The project integrates **pictures**, **analysis**, and **key definitions**, providing users with an engaging and educational experience. Through web development, I was able to enhance the accessibility and interactivity of my work, offering a unique approach to presenting the material. The color scheme, styling, and layout were carefully chosen to reflect the visual aesthetics and atmosphere of the film <em>Decoder</em>, which is a critical part of understanding the social context of Berlin's SO36 neighborhood.</p>
+<p>The project integrates pictures, analysis, and key definitions, providing users with an engaging and educational experience. Through web development, I was able to enhance the accessibility and interactivity of my work, offering a unique approach to presenting the material. The color scheme, styling, and layout were carefully chosen to reflect the visual aesthetics and atmosphere of the film <em>Decoder</em>, which is a critical part of understanding the social context of Berlin's SO36 neighborhood.</p>
 
 <h3>Key Features:</h3>
 <ul>
