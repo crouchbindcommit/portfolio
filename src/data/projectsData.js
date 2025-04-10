@@ -14,7 +14,7 @@ import creditImage from '../assets/portfolio/credit-check/cover.png';
 import allergyImage from '../assets/portfolio/allergy-alarm/cover.png';
 import portfolioImage from '../assets/portfolio/portfolio/cover.png';
 import spearPhishImage from '../assets/portfolio/spear-phish/cover.png'; 
-
+import terminalUi from '../assets/portfolio/terminal-ui/cover.png'; 
 
 //documents 
 import creditFraudPoster from '../assets/portfolio/credit-fraud/poster.pdf';
@@ -27,8 +27,8 @@ import rugbyGameSrc from '../assets/portfolio/ra-ra-rugby/godot.zip';
 import alarmPresentation from '../assets/portfolio/allergy-alarm/design-presentation.pptx';
 import alarmReport from '../assets/portfolio/allergy-alarm/design-report.pdf';
 import alarmDemo from '../assets/portfolio/allergy-alarm/demo.mp4';
-
-
+import packedTerminal from '../assets/portfolio/terminal-ui/fallout-gmail.crx';
+import terminalDemo from '../assets/portfolio/terminal-ui/demo.gif';
 
 const projectsData = [
   {
@@ -99,6 +99,51 @@ const projectsData = [
       },
     ],
   },
+  {
+    title: 'Gmail Terminal UI',
+    shortDescription: 'A Fallout terminal-inspired Chrome extension that reimagines Gmail with a retro-futuristic interface.',
+    longDescription: `
+      <p>Note: As of 04-09-2025, this project is undergoing validation to be in the Chrome Extension Web Store. </p>
+      <h2>Project Overview</h2>
+      <p>The <strong>Gmail Terminal UI</strong> extension re-skins Gmail to resemble a <em>Vault-Tec terminal</em> from the Fallout universe. It's a fully immersive experience designed for retro computing fans and Fallout enthusiasts alike.</p>
+      <p>Inspired by the green phosphor glow of 2077 tech, this extension replaces Gmail’s interface with a terminal-like UI. The experience includes animated boot-up screens, stylized headers, and even a SPA (single-page app) feel with custom routing and email views.</p>
+      <h3>Key Features:</h3>
+      <ul>
+        <li><strong>Terminal UI:</strong> Replaces Gmail's UI with a pixelated, monochrome terminal aesthetic.</li>
+        <li><strong>OAuth Gmail Integration:</strong> Full integration with the Gmail API to read, send, draft, and reply to emails.</li>
+        <li><strong>SPA Routing:</strong> Custom client-side navigation between inbox and individual email views.</li>
+        <li><strong>New Entry System:</strong> Send emails using a terminal-themed composition form.</li>
+        <li><strong>Responsive Layout:</strong> Seamlessly integrates with Gmail without breaking core functionality.</li>
+      </ul>
+      <h3>Technologies Used:</h3>
+      <ul>
+        <li>JavaScript (ES6+)</li>
+        <li>Chrome Extensions Manifest V3</li>
+        <li>OAuth2 & Gmail API</li>
+        <li>HTML/CSS with VT323 terminal font</li>
+        <li>Framer Motion (planned) for additional polish</li>
+      </ul>
+      <p>This project blends functionality and fandom, bringing terminal nostalgia to daily email routines in a way that is both usable and fun.</p>
+    `,
+    image: terminalUi, 
+    skills: ['JavaScript', 'OAuth2', 'Gmail API', 'Chrome Extension', 'HTML', 'CSS', 'UI/UX Design'],
+    github: 'https://github.com/crouchbindcommit/fallout-gmail/tree/main',
+    liveDemo: terminalDemo,
+    documents: [
+      {
+        name: 'Packed Extension Download',
+        url: packedTerminal,
+      },
+      {
+        name: 'Privacy Policy',
+        url: 'https://github.com/crouchbindcommit/fallout-gmail/blob/main/privacy.md',
+      },
+      {
+        name: 'Terms of Service',
+        url: 'https://github.com/crouchbindcommit/fallout-gmail/blob/main/tos.md',
+      },
+    ],
+  },  
 
   {
     title: 'Free Foodify',
