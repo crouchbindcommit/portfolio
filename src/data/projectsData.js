@@ -198,11 +198,11 @@ const projectsData = [
     image: foodifyImage,
     skills: ['VueJS', 'NodeJS', 'FullStack Development', 'MongoDB', 'API Development', 'Database Development', 'ARCGis API'],
     github: 'https://github.com/crouchbindcommit/free-foody',
-    liveDemo: foodifyDemo,
+    liveDemo: 'https://freefoodify.netlify.app/',
     documents: [
       {
-        name: '',
-        url: '',
+        name: 'Recorded Demo',
+        url: foodifyDemo,
       },
     ],
   },

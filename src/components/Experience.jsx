@@ -57,11 +57,15 @@ const Experience = () => {
                                         rel="noopener noreferrer"
                                         className="document-button"
                                     >
-                                        {doc.type === 'website'
-                                            ? 'Visit Website'
-                                            : doc.type === 'Portfolio'
-                                                ? 'View Portfolio'
-                                                : `View ${doc.type}`}
+                                        {
+                                            doc.type === 'website'
+                                                ? 'Visit Website'
+                                                : doc.type === 'Portfolio'
+                                                    ? 'View Portfolio'
+                                                    : doc.type === 'CAD'
+                                                        ? 'View CAD Samples'
+                                                        : `View ${doc.type}`
+                                        }
                                     </a>
                                 ))}
                             </div>

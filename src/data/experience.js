@@ -1,5 +1,5 @@
 import pqiPresentation from '../assets/experience/PQI.pdf';
-
+import cadSelection from '../assets/experience/CAD/cad-selection.pdf';
 
 const experienceData = [
     {
@@ -39,6 +39,7 @@ const experienceData = [
   <p>
     By using modern web technologies and following industry best practices, I was able to deliver a secure, scalable, and user-friendly web solution that meets the specific needs of the medical practice and its patients.
   </p>
+
 </div>
       `,
         documents: [{ type: "website", "link": "www.graceapple.com" }]
@@ -155,10 +156,16 @@ const experienceData = [
   <p>
     My work culminated in the creation of <strong>training material</strong> specific to EPRI. With permission from my project manager, I was able to take a subset of this training material and use it to showcase the work I accomplished during the project. This material helped to onboard and train others, ensuring they could understand and effectively use the new features I developed in the webtool.
   </p>
+
+  <h3> CAD Icons </h3>
+  <p>
+      In addition to my software development, I used OnShape CAD services to create icons for new equipment in the PQI. 
+  </p>
+  
 </div>       
       `,
         recognitions: ["WATTS UP Toastmasters Rookie of the Year Award 2023"],
-        documents: [{ type: "Portfolio", link: pqiPresentation }]
+        documents: [{ type: "Portfolio", link: pqiPresentation }, {type: "CAD", link: cadSelection}]
     },
 
     {
