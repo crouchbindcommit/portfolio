@@ -1,7 +1,4 @@
-from pathlib import Path
-
-# Define the content of the README.md file
-readme_content = """# Mak McKinney – Software Engineering Portfolio
+# Mak McKinney – Software Engineering Portfolio
 
 Welcome to my personal software engineering portfolio, built with **React**, **Tailwind CSS**, **Framer Motion**, and **GSAP**. This portfolio showcases my projects, experience, and background in computer engineering, embedded systems, and creative development.
 
