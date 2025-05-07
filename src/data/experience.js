@@ -3,6 +3,14 @@ import cadSelection from '../assets/experience/CAD/cad-selection.pdf';
 
 const experienceData = [
     {
+        title: "Gfuture Engineer",
+        company: "Gerdau North America",
+        startDate: "June 2025",
+        endDate: "Present",
+        description: `Description loading...`,
+    },
+    
+    {
         title: "Contract Software Developer",
         company: "Grace Apple Medical LLC",
         startDate: "February 2025",
@@ -49,7 +57,7 @@ const experienceData = [
         title: "Programming Engineer Technician",
         company: "Electro-Mechanical Inc.",
         startDate: "December 2024",
-        endDate: "Present",
+        endDate: "May 2025",
         description: `
         <div class="project-description">
   <h2>Project Overview</h2>
@@ -93,7 +101,7 @@ const experienceData = [
         title: "Peer Learning Assistant (Tutor)",
         company: "Vol Study Center @ The University of Tennessee Knoxville",
         startDate: "November 2022",
-        endDate: "Present",
+        endDate: "May 2025",
         description: `
         <div class="project-description">
   <h2>Project Overview</h2>
