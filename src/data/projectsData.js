@@ -367,8 +367,8 @@ const projectsData = [
     `,
     image: hydroponicsImage,
     skills: ['VHDL', 'System Design', 'Hardware Design', 'Field Programmable Gate Array (FPGA)', 'Project Development'],
-    github: '',
-    liveDemo: 'https://www.youtube.com/watch?v=cyj4AtBYGww0',
+    github: 'https://m.youtube.com/shorts/cI3ZA0WCz2s',
+    liveDemo: '',
     documents: [
       {
         name: 'Project Report',
